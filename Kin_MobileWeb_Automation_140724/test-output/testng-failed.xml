@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" name="Failed suite [NaverMainMobileWeb Regression Test]" parallel="tests">
+  <parameter name="browser" value="galaxy_note2"/>
+  <test name="galaxy_note2(failed)" parallel="tests">
+    <parameter name="browser" value="galaxy_note2"/>
+    <classes>
+      <class name="com.naver.main.kin.s03_새질문.suite_01_새질문_하위메뉴_Test">
+        <methods>
+          <include name="setupClass"/>
+          <include name="TC_08_새질문_관심키워드_설정_Test"/>
+          <include name="TC_07_새질문_관심키워드_전체_Test"/>
+          <include name="TC_10_새질문_관심지역_설정_Test"/>
+          <include name="TC_09_새질문_관심지역_전체_Test"/>
+          <include name="TC_05_새질문_관심분야_전체_Test"/>
+        </methods>
+      </class> <!-- com.naver.main.kin.s03_새질문.suite_01_새질문_하위메뉴_Test -->
+    </classes>
+  </test> <!-- galaxy_note2(failed) -->
+</suite> <!-- Failed suite [NaverMainMobileWeb Regression Test] -->

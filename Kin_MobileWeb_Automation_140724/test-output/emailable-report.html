@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">NaverMainMobileWeb Regression Test</th></tr><tr><td><a href="#t0">galaxy_note2</a></td><td class="num">7</td><td class="num">0</td><td class="num attn">5</td><td class="num">166,354</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">NaverMainMobileWeb Regression Test</th></tr></tbody><tbody id="t0"><tr><th colspan="4">galaxy_note2 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="5">com.naver.main.kin.s03_새질문.suite_01_새질문_하위메뉴_Test</td><td><a href="#m0">TC_05_새질문_관심분야_전체_Test</a></td><td rowspan="1">1407934632486</td><td rowspan="1">31493</td></tr><tr class="failedeven"><td><a href="#m1">TC_07_새질문_관심키워드_전체_Test</a></td><td rowspan="1">1407934668148</td><td rowspan="1">31100</td></tr><tr class="failedeven"><td><a href="#m2">TC_08_새질문_관심키워드_설정_Test</a></td><td rowspan="1">1407934699250</td><td rowspan="1">3124</td></tr><tr class="failedeven"><td><a href="#m3">TC_09_새질문_관심지역_전체_Test</a></td><td rowspan="1">1407934702375</td><td rowspan="1">30542</td></tr><tr class="failedeven"><td><a href="#m4">TC_10_새질문_관심지역_설정_Test</a></td><td rowspan="1">1407934732919</td><td rowspan="1">30400</td></tr><tr><th colspan="4">galaxy_note2 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">com.naver.main.kin.s03_새질문.suite_01_새질문_하위메뉴_Test</td><td><a href="#m5">TC_01_새질문__관심탭_전체_Test</a></td><td rowspan="1">1407934616442</td><td rowspan="1">7155</td></tr><tr class="passedeven"><td><a href="#m6">TC_02_새질문_관심탭_관심지역_Test</a></td><td rowspan="1">1407934623598</td><td rowspan="1">2933</td></tr><tr class="passedeven"><td><a href="#m7">TC_03_새질문_관심탭_관심키워드_Test</a></td><td rowspan="1">1407934626531</td><td rowspan="1">2977</td></tr><tr class="passedeven"><td><a href="#m8">TC_04_새질문_관심탭_전체_Test</a></td><td rowspan="1">1407934629509</td><td rowspan="1">2977</td></tr><tr class="passedeven"><td><a href="#m9">TC_06_새질문_관심분야_설정_Test</a></td><td rowspan="1">1407934663985</td><td rowspan="1">4160</td></tr><tr class="passedeven"><td><a href="#m10">TC_06_새질문_전체_펼치기_Test</a></td><td rowspan="1">1407934668146</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m11">TC_07_내소식_TOP</a></td><td rowspan="1">1407934668147</td><td rowspan="1">0</td></tr></tbody></table><h2>galaxy_note2</h2><h3 id="m0">com.naver.main.kin.s03_새질문.suite_01_새질문_하위메뉴_Test#TC_05_새질문_관심분야_전체_Test</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for presence of element located by: By.linkText: 경제
+Build info: version: &apos;2.32.0&apos;, revision: &apos;6c40c18&apos;, time: &apos;2013-04-09 17:23:04&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_45&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:259)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.naver.main.Utilities.waitForIsSelected(Utilities.java:633)
+	at com.naver.main.kin.s03_새질문.suite_01_새질문_하위메뉴_Test.TC_05_새질문_관심분야_전체_Test(suite_01_새질문_하위메뉴_Test.java:171)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: org.openqa.selenium.NoSuchElementException: Could not find element with linkText: 경제
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;armv7l&apos;, os.version: &apos;3.0.31-2029580&apos;, java.version: &apos;0&apos;
+Driver info: driver.version: EventFiringWebDriver
+Command duration or timeout: 616 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.32.0&apos;, revision: &apos;6c40c18&apos;, time: &apos;2013-04-09 17:23:04&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_45&apos;
+Session ID: 1407927042902
+Driver info: com.naver.main.Utilities
+Capabilities [{platform=ANDROID, acceptSslCerts=true, javascriptEnabled=true, handlesAlerts=true, browserName=android, browserConnectionEnabled=true, webStorageEnabled=true, rotatable=true, locationContextEnabled=true, applicationCacheEnabled=true, webdriver.remote.sessionid=1407927042902, takesScreenshot=true, version=19}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:356)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:241)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:523)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$0(ExpectedConditions.java:521)
+	at org.openqa.selenium.support.ui.ExpectedConditions$3.apply(ExpectedConditions.java:106)
+	at org.openqa.selenium.support.ui.ExpectedConditions$3.apply(ExpectedConditions.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 22 more
+Caused by: org.openqa.selenium.NoSuchElementException: Could not find element with linkText: 경제
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;armv7l&apos;, os.version: &apos;3.0.31-2029580&apos;, java.version: &apos;0&apos;
+Driver info: driver.version: EventFiringWebDriver
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.32.0&apos;, revision: &apos;6c40c18&apos;, time: &apos;2013-04-09 17:23:04&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_45&apos;
+Driver info: driver.version: EventFiringWebDriver
+	at org.openqa.selenium.android.library.AndroidWebElement.lookupElement(AndroidWebElement.java:351)
+	at org.openqa.selenium.android.library.AndroidWebElement.access$1(AndroidWebElement.java:340)
+	at org.openqa.selenium.android.library.AndroidWebElement$FindByImpl.findElementByLinkText(AndroidWebElement.java:270)
+	at org.openqa.selenium.android.library.AndroidWebDriver$AndroidFindBy.findElementByLinkText(AndroidWebDriver.java:560)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:241)
+	at org.openqa.selenium.android.library.AndroidWebDriver.findElement(AndroidWebDriver.java:507)
+	at org.openqa.selenium.android.AndroidApkDriver.findElement(AndroidApkDriver.java:70)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:102)
+	at $Proxy1.findElement(Native Method)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:181)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:48)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:151)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+	at java.lang.Thread.run(Thread.java:841)
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">com.naver.main.kin.s03_새질문.suite_01_새질문_하위메뉴_Test#TC_07_새질문_관심키워드_전체_Test</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for presence of element located by: By.linkText: 아이폰
+Build info: version: &apos;2.32.0&apos;, revision: &apos;6c40c18&apos;, time: &apos;2013-04-09 17:23:04&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_45&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:259)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.naver.main.Utilities.waitForIsSelected(Utilities.java:633)
+	at com.naver.main.kin.s03_새질문.suite_01_새질문_하위메뉴_Test.TC_07_새질문_관심키워드_전체_Test(suite_01_새질문_하위메뉴_Test.java:210)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: org.openqa.selenium.NoSuchElementException: Could not find element with linkText: 아이폰
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;armv7l&apos;, os.version: &apos;3.0.31-2029580&apos;, java.version: &apos;0&apos;
+Driver info: driver.version: EventFiringWebDriver
+Command duration or timeout: 425 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.32.0&apos;, revision: &apos;6c40c18&apos;, time: &apos;2013-04-09 17:23:04&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_45&apos;
+Session ID: 1407927042902
+Driver info: com.naver.main.Utilities
+Capabilities [{platform=ANDROID, acceptSslCerts=true, javascriptEnabled=true, handlesAlerts=true, browserName=android, browserConnectionEnabled=true, webStorageEnabled=true, rotatable=true, locationContextEnabled=true, applicationCacheEnabled=true, webdriver.remote.sessionid=1407927042902, takesScreenshot=true, version=19}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:356)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:241)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:523)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$0(ExpectedConditions.java:521)
+	at org.openqa.selenium.support.ui.ExpectedConditions$3.apply(ExpectedConditions.java:106)
+	at org.openqa.selenium.support.ui.ExpectedConditions$3.apply(ExpectedConditions.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 22 more
+Caused by: org.openqa.selenium.NoSuchElementException: Could not find element with linkText: 아이폰
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;armv7l&apos;, os.version: &apos;3.0.31-2029580&apos;, java.version: &apos;0&apos;
+Driver info: driver.version: EventFiringWebDriver
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.32.0&apos;, revision: &apos;6c40c18&apos;, time: &apos;2013-04-09 17:23:04&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_45&apos;
+Driver info: driver.version: EventFiringWebDriver
+	at org.openqa.selenium.android.library.AndroidWebElement.lookupElement(AndroidWebElement.java:351)
+	at org.openqa.selenium.android.library.AndroidWebElement.access$1(AndroidWebElement.java:340)
+	at org.openqa.selenium.android.library.AndroidWebElement$FindByImpl.findElementByLinkText(AndroidWebElement.java:270)
+	at org.openqa.selenium.android.library.AndroidWebDriver$AndroidFindBy.findElementByLinkText(AndroidWebDriver.java:560)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:241)
+	at org.openqa.selenium.android.library.AndroidWebDriver.findElement(AndroidWebDriver.java:507)
+	at org.openqa.selenium.android.AndroidApkDriver.findElement(AndroidApkDriver.java:70)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:102)
+	at $Proxy1.findElement(Native Method)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:181)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:48)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:151)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+	at java.lang.Thread.run(Thread.java:841)
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">com.naver.main.kin.s03_새질문.suite_01_새질문_하위메뉴_Test#TC_08_새질문_관심키워드_설정_Test</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[Title] : 관심분야 : 지식iN&lt;br&gt;<br/>[URL] : http://qa.m.kin.naver.com/mobile/qna/userInterestDirs.nhn&lt;br&gt;</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at com.naver.main.kin.s03_새질문.suite_01_새질문_하위메뉴_Test.TC_08_새질문_관심키워드_설정_Test(suite_01_새질문_하위메뉴_Test.java:231)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">com.naver.main.kin.s03_새질문.suite_01_새질문_하위메뉴_Test#TC_09_새질문_관심지역_전체_Test</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for presence of element located by: By.id: choose_directory_manual
+Build info: version: &apos;2.32.0&apos;, revision: &apos;6c40c18&apos;, time: &apos;2013-04-09 17:23:04&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_45&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:259)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.naver.main.Utilities.waitForIsElementPresent(Utilities.java:341)
+	at com.naver.main.Utilities.selectAndWait(Utilities.java:508)
+	at com.naver.main.kin.s03_새질문.suite_01_새질문_하위메뉴_Test.TC_09_새질문_관심지역_전체_Test(suite_01_새질문_하위메뉴_Test.java:248)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: org.openqa.selenium.NoSuchElementException: Could not find element with id: choose_directory_manual
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;armv7l&apos;, os.version: &apos;3.0.31-2029580&apos;, java.version: &apos;0&apos;
+Driver info: driver.version: EventFiringWebDriver
+Command duration or timeout: 140 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.32.0&apos;, revision: &apos;6c40c18&apos;, time: &apos;2013-04-09 17:23:04&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_45&apos;
+Session ID: 1407927042902
+Driver info: com.naver.main.Utilities
+Capabilities [{platform=ANDROID, acceptSslCerts=true, javascriptEnabled=true, handlesAlerts=true, browserName=android, browserConnectionEnabled=true, webStorageEnabled=true, rotatable=true, locationContextEnabled=true, applicationCacheEnabled=true, webdriver.remote.sessionid=1407927042902, takesScreenshot=true, version=19}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:348)
+	at org.openqa.selenium.By$ById.findElement(By.java:216)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:523)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$0(ExpectedConditions.java:521)
+	at org.openqa.selenium.support.ui.ExpectedConditions$3.apply(ExpectedConditions.java:106)
+	at org.openqa.selenium.support.ui.ExpectedConditions$3.apply(ExpectedConditions.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 23 more
+Caused by: org.openqa.selenium.NoSuchElementException: Could not find element with id: choose_directory_manual
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;armv7l&apos;, os.version: &apos;3.0.31-2029580&apos;, java.version: &apos;0&apos;
+Driver info: driver.version: EventFiringWebDriver
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.32.0&apos;, revision: &apos;6c40c18&apos;, time: &apos;2013-04-09 17:23:04&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_45&apos;
+Driver info: driver.version: EventFiringWebDriver
+	at org.openqa.selenium.android.library.AndroidWebElement.lookupElement(AndroidWebElement.java:351)
+	at org.openqa.selenium.android.library.AndroidWebElement.access$1(AndroidWebElement.java:340)
+	at org.openqa.selenium.android.library.AndroidWebElement$FindByImpl.findElementById(AndroidWebElement.java:254)
+	at org.openqa.selenium.android.library.AndroidWebDriver$AndroidFindBy.findElementById(AndroidWebDriver.java:568)
+	at org.openqa.selenium.By$ById.findElement(By.java:216)
+	at org.openqa.selenium.android.library.AndroidWebDriver.findElement(AndroidWebDriver.java:507)
+	at org.openqa.selenium.android.AndroidApkDriver.findElement(AndroidApkDriver.java:70)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:102)
+	at $Proxy1.findElement(Native Method)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:181)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:48)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:151)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+	at java.lang.Thread.run(Thread.java:841)
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m4">com.naver.main.kin.s03_새질문.suite_01_새질문_하위메뉴_Test#TC_10_새질문_관심지역_설정_Test</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for element to be clickable: By.className: set
+Build info: version: &apos;2.32.0&apos;, revision: &apos;6c40c18&apos;, time: &apos;2013-04-09 17:23:04&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_45&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:259)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.naver.main.Utilities.clickAndWait(Utilities.java:448)
+	at com.naver.main.kin.s03_새질문.suite_01_새질문_하위메뉴_Test.TC_10_새질문_관심지역_설정_Test(suite_01_새질문_하위메뉴_Test.java:263)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: org.openqa.selenium.NoSuchElementException: Could not find element with className: set
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;armv7l&apos;, os.version: &apos;3.0.31-2029580&apos;, java.version: &apos;0&apos;
+Driver info: driver.version: EventFiringWebDriver
+Command duration or timeout: 132 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.32.0&apos;, revision: &apos;6c40c18&apos;, time: &apos;2013-04-09 17:23:04&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_45&apos;
+Session ID: 1407927042902
+Driver info: com.naver.main.Utilities
+Capabilities [{platform=ANDROID, acceptSslCerts=true, javascriptEnabled=true, handlesAlerts=true, browserName=android, browserConnectionEnabled=true, webStorageEnabled=true, rotatable=true, locationContextEnabled=true, applicationCacheEnabled=true, webdriver.remote.sessionid=1407927042902, takesScreenshot=true, version=19}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:187)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:388)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:523)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$0(ExpectedConditions.java:521)
+	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:130)
+	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$12.apply(ExpectedConditions.java:355)
+	at org.openqa.selenium.support.ui.ExpectedConditions$12.apply(ExpectedConditions.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 22 more
+Caused by: org.openqa.selenium.NoSuchElementException: Could not find element with className: set
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;unknown&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;armv7l&apos;, os.version: &apos;3.0.31-2029580&apos;, java.version: &apos;0&apos;
+Driver info: driver.version: EventFiringWebDriver
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.32.0&apos;, revision: &apos;6c40c18&apos;, time: &apos;2013-04-09 17:23:04&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_45&apos;
+Driver info: driver.version: EventFiringWebDriver
+	at org.openqa.selenium.android.library.AndroidWebElement.lookupElement(AndroidWebElement.java:351)
+	at org.openqa.selenium.android.library.AndroidWebElement.access$1(AndroidWebElement.java:340)
+	at org.openqa.selenium.android.library.AndroidWebElement$FindByImpl.findElementByClassName(AndroidWebElement.java:310)
+	at org.openqa.selenium.android.library.AndroidWebDriver$AndroidFindBy.findElementByClassName(AndroidWebDriver.java:616)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:371)
+	at org.openqa.selenium.android.library.AndroidWebDriver.findElement(AndroidWebDriver.java:507)
+	at org.openqa.selenium.android.AndroidApkDriver.findElement(AndroidApkDriver.java:70)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:102)
+	at $Proxy1.findElement(Native Method)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:181)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:48)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:151)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+	at java.lang.Thread.run(Thread.java:841)
+... Removed 21 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m5">com.naver.main.kin.s03_새질문.suite_01_새질문_하위메뉴_Test#TC_01_새질문__관심탭_전체_Test</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[Title] : 전체 : 지식iN&lt;br&gt;<br/>[URL] : http://qa.m.kin.naver.com/mobile/qna/questionList.nhn#%7B%22dirId%22%3A0%2C%22sortType%22%3A%22writeTime%22%7D&lt;br&gt;</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m6">com.naver.main.kin.s03_새질문.suite_01_새질문_하위메뉴_Test#TC_02_새질문_관심탭_관심지역_Test</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[Title] : 관심지역 : 지식iN&lt;br&gt;<br/>[URL] : http://qa.m.kin.naver.com/mobile/qna/localQuestionList.nhn&lt;br&gt;</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m7">com.naver.main.kin.s03_새질문.suite_01_새질문_하위메뉴_Test#TC_03_새질문_관심탭_관심키워드_Test</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[Title] : 관심키워드 : 지식iN&lt;br&gt;<br/>[URL] : http://qa.m.kin.naver.com/mobile/qna/keywordQuestionList.nhn#%7B%22keyword%22%3A%22%22%2C%22encodedTotalKeywords%22%3A%22%22%2C%22sortType%22%3A%22date%22%7D&lt;br&gt;</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m8">com.naver.main.kin.s03_새질문.suite_01_새질문_하위메뉴_Test#TC_04_새질문_관심탭_전체_Test</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[Title] : 관심분야 : 지식iN&lt;br&gt;<br/>[URL] : http://qa.m.kin.naver.com/mobile/qna/directoryQuestionList.nhn#%7B%22dirId%22%3A0%2C%22sortType%22%3A%22writeTime%22%7D&lt;br&gt;</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m9">com.naver.main.kin.s03_새질문.suite_01_새질문_하위메뉴_Test#TC_06_새질문_관심분야_설정_Test</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[Title] : 관심분야 : 지식iN&lt;br&gt;<br/>[URL] : http://qa.m.kin.naver.com/mobile/qna/userInterestDirs.nhn&lt;br&gt;</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m10">com.naver.main.kin.s03_새질문.suite_01_새질문_하위메뉴_Test#TC_06_새질문_전체_펼치기_Test</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m11">com.naver.main.kin.s03_새질문.suite_01_새질문_하위메뉴_Test#TC_07_내소식_TOP</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>
