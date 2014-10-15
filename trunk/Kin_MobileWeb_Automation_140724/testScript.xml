@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="NaverMainMobileWeb Regression Test" parallel="tests" thread-count="10">  	
+    
+    <!--  
+    <test name="galaxy_s4" preserve-order = "true">
+		<parameter name="browser"  value="galaxy_s4"/>
+		<classes>		    
+			<class name="com.naver.main.test.Case01_SimpleTest"/>		
+			
+		</classes>
+	</test>
+	
+    <test name="Nexus5" preserve-order = "true">
+		<parameter name="browser"  value="Nexus5"/>
+		<classes>		    
+			<class name="com.naver.main.test.Case01_SimpleTest"/>		
+			
+		</classes>
+	</test>
+	
+	<test name="galaxy_s3" preserve-order = "true">
+		<parameter name="browser"  value="galaxy_s3"/>
+		<classes>		    
+			<class name="com.naver.main.test.Case01_SimpleTest"/>		
+			
+		</classes>
+	</test>
+	-->
+     <test name="galaxy_note2" preserve-order = "true">
+		<parameter name="browser"  value="galaxy_note2"/>
+		<classes>		    
+			<!-- <class name="com.naver.main.kin.s01_지식iN홈.suite_01_지식iN홈_GNB_Test"/>
+			<class name="com.naver.main.kin.s01_지식iN홈.suite_02_지식iN홈_LNB_Test"/>
+			<class name="com.naver.main.kin.s01_지식iN홈.suite_03_지식iN홈_Footer_Test"/>
+			<class name="com.naver.main.kin.s02_내소식.suite_01_내소식_프로필_Test"/>-->
+			<class name="com.naver.main.kin.s03_새질문.suite_01_새질문_하위메뉴_Test"/>
+			
+		</classes>
+	</test>
+	
+      
+</suite> <!-- Suite -->
