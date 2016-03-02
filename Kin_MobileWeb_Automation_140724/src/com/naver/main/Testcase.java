@@ -1,20 +1,16 @@
 
 package com.naver.main;
 
-import org.openqa.selenium.Platform;
+import com.naver.main.Capabilities;
+import com.naver.main.Modules;
+import com.naver.main.Utilities;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.UnreachableBrowserException;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
-
-import com.naver.main.Capabilities;
-import com.naver.main.Modules;
-import com.naver.main.Utilities;
 
 public class Testcase {
 	
