@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>폼에서 값 가져오기</title>
+<script type="text/javascript">
+    function checkValues(){
+        var usesrInput = document.testingForm.enterText.value;
+        alert(userInput);
+        var userInputTextArea = document.testingForm.enterTextArea.value;
+        alert(userInputTextArea);
+        var userCheckBox = document.testingForm.clickCheckBox.value;
+
+    if(document.testingForme.clickCheckBox.checked){
+    userCheckBox = true;
+    }
+    else{
+    userCheckBox = false;
+    }
+    alert(userheckBox);
+
+    var userSelectBox = document.testingForm.userSelectBox.value;
+    alert(userSelectBox);
+
+    alert(document.testingForm.radioTyper.length);
+    for(var counter = 0; counter<document.testing.Form.radioType.length; counter++){
+
+    if(document.testingForm.radioType[counter].checked){
+    var userRadioButton = document.testingForm.radioType[counter].calue;
+    alert(userRadioButton);
+    }
+    }
+    }
+</script>
+</head>
+<body>
+<h1>자바 스크립트에서 값에 접근하는 방법을 보여주는 간단한 폼</h1>
+<form name = "testingForm" onsubmit="return checkValues()">
+    <p>텍스트를 입력하세요 : <input type="text" name ="enterText" /></p>
+    <p>텍스트를 입력하세요 : <textarea rows="2" cols="20" name="enterTextArea"></textarea></p>
+    <p>체크박스에 체크하세요 <input type="checkbox" name="clickCheckBox"/></p>
+
+    <p>옵션을 선택하세요 :
+    <select name="userSelectBox">
+        <option value="EMPTY">--빈값--</option>
+        <option value="option1">옵션 1</option>
+        <option value="option2">옵션 2</option>
+        <option value="option3">옵션 3</option>
+        <option value="option4">옵션 4</option>
+    </select>
+    </p>
+
+
+    <p>라디오 버튼 선택 : <br />
+
+        <input type="radio" name="radioType" value="python" /> 파이썬
+        <br />
+        <input type="radio" name="radioType" value="javascript" /> 자바스크립트
+        <br />
+        <input type="radio" name="radioType" value="java" /> 자바
+        <br />
+        <input type="radio" name="radioType" value="php" /> PHP
+        <br />
+        <input type="radio" name="radioType" value="actionscript" /> 액션스크립트 3.0
+    </p>
+
+    <input type="submit" value="폼 제출" />
+
+</form>
+</body>
+</html>

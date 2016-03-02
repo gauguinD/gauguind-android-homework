@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>올바른값 가져오기</title>
+    <style>
+        input{
+        padding:5px;
+        margin:5px;
+        font-size:10px;
+        }
+
+        .shown{
+        display:none;
+        }
+
+        .response{
+        padding:5px;
+        margin:5px;
+        width:inherit;
+        color:red;
+        font-size:16px;
+        float:left;
+        }
+
+        #container{
+        position:absolute;
+        width:800px;
+        padding:5px;
+        border:2px solid black;
+        float:left;
+        padding:5px;
+        }
+
+        #left{
+        height:inherit;
+        width:370px;
+        border-right:2px solid black;
+        float:left;
+        padding:5px;
+        }
+
+        #right{
+        height:inherit;
+        width:300px;
+        float:left;
+        padding:5px;
+        }
+
+        #bottom{
+        float:left;
+        bottom:5px;
+        padding:5px;
+        }
+
+        #finalResponse{
+        float:left;
+        width:780px;
+        height:250px;
+        border:3px solid blue;
+        padding:5px;
+        }
+
+        #debugging{
+        float:left;
+        margin-left:820px;
+        height:95%;
+        width:350px;
+        border:solid 3px red;
+        padding:5px;
+        color:red;
+        font-size:10px;
+        }
+    </style>
+
+<script type="text">
+
+        var globalCounter = 0;
+        function submitValues(elementObj){
+        alert("submitValues");
+        alert(elementObj.name);
+
+        var totalInputElements = document.testForm.length;
+        alert("total elements: " + totlaInputElements);
+
+
+        var digits = /^\d+$.test(elementObj.value);
+        var characters = /^[a-zA-Z\s]*$/.test(elementObj.value);
+
+        if(elementObj.value=="");{
+        alert("빈 입력값");
+        return false;
+        }
+
+        else if(elementObj.name == "enterNumber" && digits == false){
+        alert("숫자를 입력하세요");
+        return false;
+        }
+
+    else if(elementObj.name == "enterText" && letters == false){
+    alert("문자를 입력하세요");
+    return false;
+    }
+
+    else{
+    elemintObj.disabled = true;
+    addResponseElement(elementObj.value,elementObj.id);
+    return true;
+    }
+    }
+
+    function addResponseElement(messageValue, idName){
+    globalCounter++;
+    var totalInputElements = document.testForm.length;
+    var container = document.getElementById('formSubmit');
+    container.innerHTML += "<input type=\"text\"calue=\""+messagerValue+"\"name=\""+idName+"\"/><br>";
+    if(globalCounter == totalInputElement){
+    container.innerHTML +="<input type=\"submit\" value=\"제출\"> />";
+    }
+    }
+
+    function checkForm(formObj){
+    var totalInputElements = document.testFormResponse.length;
+    var nameOfPerson = document.testFormResponse.nameOfPerson.value;
+    var birth = document.testFormResponse.birth.value;
+    var age = document.testFormResponse.age.value;
+    var spending = document.testFormResponse.spending.value;
+    var salary = document.testFormResponse.salary.value;
+    var retire = document.testFormResponse.retire.value;
+
+    var retirementMoney = document.restFormResponse.rerirementMoney.value;
+    var confirmedSavingsByRetirement;
+    var ageDifference = retire-age;
+    var salaryPerYear = salary * 12;
+    var spendingPerYear = spending * 12;
+
+
+    var incomeDiffernce = salaryPerYear - spendingPerYear;
+
+    if(incomeDifference <=0){
+    buildFinalResponse(nameOfPerson,-1,-1,-1,incomeDifference);
+    return true;
+    }
+
+    else{
+    confirmedSavingByRetirement = incomeDifference * ageDifference;
+    if(confirmedSavingByRetirement <= retirementMoney){
+    var shortChange = retirementMoney - confirmedSavingByRetirement;
+    var yearsNeeded = shortChange/12;
+    buildFinalResponse(nameOfPerson,false,yearsNeeded,retire,shortChange);
+    return true;
+    }
+    else{
+    var excessMoney = confirmedSavingByRetirement - retirementMoney;
+    buildFinalResponse(name,true,-1,retire,excessMoney);
+    return true;
+    }
+    }
+    }
+
+    function buildFinalResponse(name,retiring,yearsNeeded,retire, shortChange){
+    var element = document.getElementById("finalResponse");
+    if(retiring == false){
+    element.innerHTML += "<p>Hi <b>" + name + "</b>,<p>";
+        element.innerHTML += "<p>We've processed your information and we have noticed a problem.<p>";
+        element.innerHTML += "<p>Base on your current spending habits, you will not be able to retire by <b>" + retire + " </b> years old.</p>";
+    element.innerHTML += "<p>You need to make another <b>" + shortChange + "</b> dollars before you retire inorder to acheive our goal</p>";
+    element.innerHTML += "<p>You either have to increase your income or decrease your spending.<p>";
+        }
+            /*
+        else if(retiring == -1){
+        element.innerHTML += "<p>Hi <b>" + name + "</b>,<p>";
+        element.innerHTML += "<p>We've processed your information and we have noticed HUGE problem.<p>";
+        element.innerHTML += "<p>Base on your current spending habits, you will not be able to retire by <b>" + retire + " </b> years old.</p>";
+    element.innerHTML += "<p>This is because you spend more money than you make. You spend <b>" + shortChange + "</b> in excess of what you make</p>";
+    element.innerHTML += "<p>You either have to increase your income or decrease your spending.<p>";
+        }
+            */
+
+        else{
+        // able to retire but....
+        element.innerHTML += "<p>Hi <b>" + name + "</b>,<p>";
+        element.innerHTML += "<p>We've processed your information and are pleased to announce that you will be able to retire on time.<p>";
+        element.innerHTML += "<p>Base on your current spending habits, you will be able to retire by <b>" + retire + "</b> years old.</p>";
+    element.innerHTML += "<p>Also, you'll have <b>" + shortChange + "</b> amount of excess cash when you retire.</p>";
+    element.innerHTML += "<p>Congrats!<p>";
+        }
+        }
+
+
+</script>
+
+</head>
+<body>
+<div id="container">
+    <div id="left">
+        <h3>정보입력</h3>
+        <form name="testForm">
+            <input type="text" name="enterText" id="nameOfPerson" onblur="submitValues(this)" size="50" value="이름"/><br>
+            <input type="text" name="enterText" id="birth" onblur="submitValues(this)"size="50" value="출생지"/><br>
+            <input type="text" name="enterText" id="spending" onblur="submitValues(this)"size="50" value="월 지출액"/><br>
+            <input type="text" name="enterText" id="salary" onblur="submitValues(this)"size="50" value="월 소득액"/><br>
+            <input type="text" name="enterText" id="retire" onblur="submitValues(this)"size="50" value="은퇴를 원하는 나이"/><br>
+            <input type="text" name="enterText" id="retirementMoney" onblur="submitValues(this)"size="50" value="은퇴시 소지 금액"/><br>
+            <input type="text" name="enterText" id="age" onblur="submitValues(this)"size="50" value="나이"/><br>
+        </form>
+    </div>
+    <div id="right">
+        <h3>응답</h3>
+        <form name="testFormResponse" id="formSubmit" onsubmit="checkForm(this);return false"></form>
+    </div>
+    <div id="finalResponse"><h3>최종응답</h3></div>
+
+</div>
+</body>
+</html>

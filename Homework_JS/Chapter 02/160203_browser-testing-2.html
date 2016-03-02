@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>.hasFeature()를 이용한 브라우저 기능 테스트 - 예제 2</title>
+</head>
+<body>
+<script type="text/javascript">
+    var hasCore = document.implementation.hasFeature("Core","2.0")
+    if(hasCore){
+    document.write("코어가 지원됨 그 기능을 바탕으로 한 코드를 수행합니다");
+    }
+    else{
+    document.write("코어가 지원되지 않음 프로그램을 동작하게 하는 다른 대안을 수행합니다.");}
+</script>
+</body>
+</html>

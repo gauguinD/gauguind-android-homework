@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>브라우저 테스트 예제 1</title>
+</head>
+<body>
+<script type="text/javascript">
+    var browserType = "브라우저 정보\n";
+    for(var propertyName in navigator){
+    browserType += propertyName + ": " + navigator[propertyName] +"\n";
+    }
+    alert(browserType);
+</script>
+</body>
+</html>

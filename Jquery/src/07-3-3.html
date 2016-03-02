@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script>
+        //<![CDATA[
+        $(function(){
+        $("#wrap li").css("border","1px solid red");
+        //$(".second").parent().css("border","1px solid red");
+        //$(".direct").css("background-color","yellow");
+        //$("#tit").css("background-color","yellow")
+        //.css("border","2px solid red);
+        });
+        //]]>
+    </script>
+</head>
+<body>
+<h1>인접관계선택자</h1>
+<ul id="wrap">
+    <li>내용1
+        <ul>
+            <li>내용2</li>
+            <li class="second">내용3</li>
+        </ul>
+    </li>
+</ul>
+</body>
+</html>

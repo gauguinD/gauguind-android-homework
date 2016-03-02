@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>.hasFeature()를 이용한 브라우저 기능 테스트</title>
+</head>
+<body>
+<script>
+    var hasCore = document.implementation.hasFeature("Core","2.0");
+    document.write("코어 호환성 : " + hasCore + "<br>");
+
+
+    var hasHTML = document.implementation.hasFeature("HTML","2.0");
+    document.write("HTML 호환성 : " + hasHTML + "<br>");
+
+
+    var hasXML = document.implementation.hasFeature("XML","2.0");
+    document.write("XML 호환성 : " + hasXML + "<br>");
+
+
+    var hasStyleSheets = document.implementation.hasFeature("StyleSheets","2.0");
+    document.write("스타일 시트 호환성 : " + hasStyleSheets + "<br>");
+
+
+    var hasCSS = document.implementation.hasFeature("CSS","2.0");
+    document.write("CSS 호환성 : " + hasCSS + "<br>");
+
+
+    var hasCSS2 = document.implementation.hasFeature("CSS2","2.0");
+    document.write("CSS2 호환성 : " + hasCSS2 + "<br>");
+
+
+    var hasCore = document.implementation.hasFeature("CSS","2.0");
+    document.write("CSS 호환성 : " + hasCSS + "<br>");
+
+</script>
+</body>
+</html>
