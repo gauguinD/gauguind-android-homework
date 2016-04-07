@@ -27,14 +27,13 @@ public class suite_01_캘린더홈_GNB_Test extends Testcase {
      * Result : 네이버 페이지로 이동됨
      * URL : http://m.naver.com"
      */
-    //@Test
+    @Test
     public void TC_01_GNB_NAVER_Test() throws Exception {
 
         util.clickAndWait(By.className("naver"));
         module.assertCalendarPage(util,module.mainTitle,module.mainURL);
 
         util.goBackAndWait();
-
         module.assertCalendarPage(util,module.calTitle,module.calURL);
 
         /*
@@ -57,7 +56,7 @@ public class suite_01_캘린더홈_GNB_Test extends Testcase {
      * Result : 개별 서비스 페이지로 이동됨
      * URL : http://me.naver.com"
      */
-    //@Test
+    @Test
     public void TC_02_GNB_탭_Test() throws Exception{
 
         util.clickAndWait(By.className("me"));
@@ -289,25 +288,4 @@ public class suite_01_캘린더홈_GNB_Test extends Testcase {
         // 알림 목록 아이콘 확인
         util.clickAndWait(By.className("gnb_service_li"));
     }
-
-    /*
-    * Step : GNB > 서비스 아이콘 클릭
-    * Result : 다를 서비스 목록 노출됨
-    */
-
-    //@Test
-    public void TC_04_AssertEvent_Test() throws Exception {
-        URL = module.calURL+"#{\"sSection\":\"scheduleMain\",\"oParameter\":{\"sViewType\":\"month\",\"sDate\":\""+module.StartDate+"\"}}";
-        util.get(URL);
-
-        util.waitForIsElementPresent(By.xpath("//a[contains(text(),'"+module.contents+"')]"));
-        util.clickAndWait(By.xpath("//a[contains(text(),'"+module.contents+"')]"));
-        //util.waitForIsElementPresent(By.linkText(module.contents));
-        //util.clickAndWait(By.linkText(module.contents));
-
-        util.waitForIsElementPresent(By.className("_modify_text"));
-        System.out.println("End");
-
-    }
-
 }
