@@ -33,7 +33,7 @@ public class suite_04_캘린더홈_좌측영역_Test extends Testcase {
     public void TC_01_좌측영역_일정약속쓰기_Test() throws Exception {
 
         util.clickAndWait(By.xpath("//span[contains(text(),'약속쓰기')]"));
-        assertTrue(util.findElement(By.linkText("캘린더로 돌아가기")).isDisplayed());
+        assertTrue(util.isElementPresent(By.linkText("캘린더로 돌아가기")).isDisplayed());
 
         util.clickAndWait(By.xpath("//a[@class='_back btn_back_calender']"));
 
@@ -41,17 +41,17 @@ public class suite_04_캘린더홈_좌측영역_Test extends Testcase {
         //시간 일정쓰기 설정 되어 있는지 확인
         if ((util.isElementPresent(By.xpath("//a[@class='_set_timezone change_time']")).isDisplayed())) {
         } else {
-            util.findElement(By.id("ch1_1")).click();
+            util.isElementPresent(By.id("ch1_1")).click();
         }
 
         //제목 입력
-        util.findElement(By.id("tx0_0")).sendKeys(module.contents);
+        util.isElementPresent(By.id("tx0_0")).sendKeys(module.contents);
         //시작 날짜 입력
-        util.findElement(By.id("start_date")).clear();
-        util.findElement(By.id("start_date")).sendKeys(module.StartDate);
+        util.isElementPresent(By.id("start_date")).clear();
+        util.isElementPresent(By.id("start_date")).sendKeys(module.StartDate);
         //종료 날짜 입력
-        util.findElement(By.id("end_date")).clear();
-        util.findElement(By.id("end_date")).sendKeys(module.EndDate);
+        util.isElementPresent(By.id("end_date")).clear();
+        util.isElementPresent(By.id("end_date")).sendKeys(module.EndDate);
 
         util.clickAndWait(By.xpath("//button[@class ='btn_sys pos_save']"));
         util.waitForIsElementPresent(By.xpath("//button[contains(@class,'_go_task type_schedule todo')]"));
@@ -65,7 +65,7 @@ public class suite_04_캘린더홈_좌측영역_Test extends Testcase {
     //@Test
     public void TC_02_좌측영역_기념일관리_Test() throws Exception{
         util.clickAndWait(By.xpath("//span[contains(text(),'기념일 관리')]"));
-        assertTrue(util.findElement(By.linkText("캘린더로 돌아가기")).isDisplayed());
+        assertTrue(util.isElementPresent(By.linkText("캘린더로 돌아가기")).isDisplayed());
 
         util.clickAndWait(By.xpath("//a[@class='_btn_back_calender btn_back_calender']"));
     }
@@ -78,7 +78,7 @@ public class suite_04_캘린더홈_좌측영역_Test extends Testcase {
     public void TC_03_좌측영역_날짜영역_Test() throws Exception{
 
         String miniCalendar;
-        miniCalendar = util.findElement(By.xpath("//div[@id='calendar_list_container']")).getAttribute("style");
+        miniCalendar = util.isElementPresent(By.xpath("//div[@id='calendar_list_container']")).getAttribute("style");
         //접혀있을때 97px 안접혀있을때 233px
         module.CurrentDate(util);
 
@@ -89,7 +89,7 @@ public class suite_04_캘린더홈_좌측영역_Test extends Testcase {
 
         if(miniCalendar.contains("top: 97px; left: 0px;"))
         {
-            System.out.println(miniCalendar);
+            util.printLog(miniCalendar);
             util.clickAndWait(By.xpath("//button[@class='_fold btn_fold']"));
             module.CurrentDate(util);
         }
@@ -141,12 +141,12 @@ public class suite_04_캘린더홈_좌측영역_Test extends Testcase {
 
         //현재 스캐쥴 노출되는지 확인
         String monthFrame;
-        monthFrame = util.findElement(By.xpath("//div[@class='view_schedule']")).getAttribute("style");
+        monthFrame = util.isElementPresent(By.xpath("//div[@class='view_schedule']")).getAttribute("style");
         util.printLog(monthFrame);
 
         util.clickAndWait(By.xpath("//span[@class='ico ico_cal']"));
 
-        monthFrame = util.findElement(By.xpath("//div[@class='view_schedule']")).getAttribute("style");
+        monthFrame = util.isElementPresent(By.xpath("//div[@class='view_schedule']")).getAttribute("style");
         //assertTrue(monthFrame.contains("display: block;"));
         util.printLog(monthFrame);
     }
@@ -169,7 +169,7 @@ public class suite_04_캘린더홈_좌측영역_Test extends Testcase {
         String calId;
         String eventKey;
         calId = module.GetCalendarKey(util,"내 캘린더");
-        eventKey = util.findElement(By.xpath("//td[@class='not_empty']/div")).getAttribute("key");
+        eventKey = util.isElementPresent(By.xpath("//td[@class='not_empty']/div")).getAttribute("key");
     }
 
     /*
@@ -182,7 +182,7 @@ public class suite_04_캘린더홈_좌측영역_Test extends Testcase {
         util.clickAndWait(By.className("btn_makecal"));
         util.clickAndWait(By.partialLinkText("내 캘린더 만들기"));
 
-        Subname = util.findElement(By.id("$$_calendar_name")).getAttribute("value").toString();
+        Subname = util.isElementPresent(By.id("$$_calendar_name")).getAttribute("value").toString();
         util.printLog(Subname);
 
         util.clickAndWait(By.xpath("//button[@class ='_save normal']"));
@@ -192,10 +192,10 @@ public class suite_04_캘린더홈_좌측영역_Test extends Testcase {
         System.out.print("캘린더 목록의 갯수 가져오기 :" + NumberOfCalender);
 
         //생성한 캘린더의 이름과 dataValue를 가져오기
-        //dataValue = util.findElement(By.xpath("//a[contains(text(),'"+Subname+"')]")).getAttribute("data-value").toString();
+        //dataValue = util.isElementPresent(By.xpath("//a[contains(text(),'"+Subname+"')]")).getAttribute("data-value").toString();
         //util.printLog("dataValue 값 입니다"+dataValue);
 
-        //dataValue = util.findElement(By.xpath("//a[@class='_calendar_name' and contains(text(),'"+Subname+"')]")).getAttribute("data-value");
+        //dataValue = util.isElementPresent(By.xpath("//a[@class='_calendar_name' and contains(text(),'"+Subname+"')]")).getAttribute("data-value");
         //util.printLog("dataValue 값 입니다"+dataValue);
 
 
@@ -203,12 +203,12 @@ public class suite_04_캘린더홈_좌측영역_Test extends Testcase {
         for(int i=1; i <= NumberOfCalender; i++)
         {
             String SubTemp;
-            SubTemp = util.findElement(By.xpath("//*[@id='calendar_list_container']/div[2]/ul/li["+i+"]/a[2]")).getAttribute("title").toString();
+            SubTemp = util.isElementPresent(By.xpath("//*[@id='calendar_list_container']/div[2]/ul/li["+i+"]/a[2]")).getAttribute("title").toString();
 
             if(SubTemp.contentEquals(Subname))
             {
                 util.printLog("True");
-                dataValue = util.findElement(By.xpath("//*[@id='calendar_list_container']/div[2]/ul/li["+i+"]")).getAttribute("calendarid");
+                dataValue = util.isElementPresent(By.xpath("//*[@id='calendar_list_container']/div[2]/ul/li["+i+"]")).getAttribute("calendarid");
                 util.printLog(dataValue);
             }
             else
@@ -223,7 +223,7 @@ public class suite_04_캘린더홈_좌측영역_Test extends Testcase {
     //@Test
     public void TC_09_Delete_calendar_Test() throws Exception{
         util.clickAndWait(By.className("btn_settingcal"));
-        util.printLog(util.findElement(By.xpath("//div[@class='_calendar_name' and contains(data-value, '"+dataValue+"']")).toString());
+        util.printLog(util.isElementPresent(By.xpath("//div[@class='_calendar_name' and contains(data-value, '"+dataValue+"']")).toString());
 
         //*[@id="holder"]/div/div[2]/div[1]/div/div[2]/table[2]/tbody/tr[4]
         //*[@id="holder"]/div/div[2]/div[1]/div/div[2]/table[2]/tbody/tr[4]/td[5]/div/a
@@ -233,7 +233,7 @@ public class suite_04_캘린더홈_좌측영역_Test extends Testcase {
         for(int i=1; i<9; i++)
         {
             String SubTemp;
-            SubTemp = util.findElement(By.xpath("//*[@id='calendar_list_container']/div[2]/ul/li["+i+"]/a[2]")).getAttribute("title").toString();
+            SubTemp = util.isElementPresent(By.xpath("//*[@id='calendar_list_container']/div[2]/ul/li["+i+"]/a[2]")).getAttribute("title").toString();
             util.printLog(SubTemp);
             util.printLog(Subname);
             if(SubTemp.contentEquals(Subname))
@@ -258,20 +258,20 @@ public class suite_04_캘린더홈_좌측영역_Test extends Testcase {
         if(!(util.isElementPresent(By.xpath("//a[@class='_set_timezone change_time']")).isDisplayed())){}
         else
         {
-            util.findElement(By.id("ch1_1")).click();
+            util.isElementPresent(By.id("ch1_1")).click();
         }
 
         util.waitForIsElementPresent(By.xpath("//*[@id='holder']/div/div[1]/a[2]"));
-        util.findElement(By.id("tx0_0")).sendKeys(module.contents);
+        util.isElementPresent(By.id("tx0_0")).sendKeys(module.contents);
 
         //util.clickAndWait(By.id("start_date"));
 
-        util.findElement(By.id("start_date")).clear();
-        util.findElement(By.id("start_date")).sendKeys(module.StartDate);
+        util.isElementPresent(By.id("start_date")).clear();
+        util.isElementPresent(By.id("start_date")).sendKeys(module.StartDate);
         //util.clickAndWait(By.id("end_date"));
 
-        util.findElement(By.id("end_date")).clear();
-        util.findElement(By.id("end_date")).sendKeys(module.EndDate);
+        util.isElementPresent(By.id("end_date")).clear();
+        util.isElementPresent(By.id("end_date")).sendKeys(module.EndDate);
 
         util.clickAndWait(By.xpath("//button[@class ='btn_sys pos_save']"));
         util.waitForIsElementPresent(By.xpath("//button[contains(@class,'_go_task type_schedule todo')]"));
@@ -286,7 +286,7 @@ public class suite_04_캘린더홈_좌측영역_Test extends Testcase {
         util.clickAndWait(By.xpath("//a[contains(text(),'"+module.contents+"')]"));
 
         util.waitForIsElementPresent(By.className("_modify_text"));
-        //System.out.println("End");
+        //util.printLog("End");
 
     }
 

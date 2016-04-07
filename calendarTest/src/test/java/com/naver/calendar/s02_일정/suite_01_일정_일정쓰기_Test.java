@@ -117,7 +117,7 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
             util.printLog("해당하는 날짜에 시간일정 \n 제목:" + module.contents + " 일정이 존재합니다");
             util.waitForIsElementPresent(By.className("_modify_text"));
         } else
-            System.out.print("해당하는 날짜에 해당하는 일정이 존재하지 않습니다");
+            util.printLog("해당하는 날짜에 해당하는 일정이 존재하지 않습니다");
     }
 
     /*
@@ -167,7 +167,7 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
             util.printLog("해당하는 날짜에 종일일정 \n 제목:" + module.contents + " 일정이 존재합니다");
             util.waitForIsElementPresent(By.className("_modify_text"));
         } else
-            System.out.print("해당하는 날짜에 해당하는 일정이 존재하지 않습니다");
+            util.printLog("해당하는 날짜에 해당하는 일정이 존재하지 않습니다");
     }
 
 
@@ -189,7 +189,7 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
 
         //음력으로 설정 되어 있는지 확인
         if (util.isElementPresent(By.xpath("//p[@class='_converted_solar_date time_default no_view']")).isDisplayed()) {
-            System.out.print("음력입니다");
+            util.printLog("음력입니다");
         } else {
             util.isElementPresent(By.xpath("//div[@class='selectbox-label']")).click();
             util.isElementPresent(By.xpath("//li[contains(text(),'음력')]")).click();
@@ -233,7 +233,7 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
             util.printLog("해당하는 날짜에 음력일정 \n 제목:" + module.contents + " 일정이 존재합니다");
             util.waitForIsElementPresent(By.className("_modify_text"));
         } else
-            System.out.print("해당하는 날짜에 해당하는 일정이 존재하지 않습니다");
+            util.printLog("해당하는 날짜에 해당하는 일정이 존재하지 않습니다");
     }
 
     /*
@@ -281,7 +281,7 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
             util.printLog("해당하는 날짜에 제목:" + module.contents + " 일정이 존재합니다");
             util.waitForIsElementPresent(By.className("_modify_text"));
         } else
-            System.out.print("해당하는 날짜에 해당하는 일정이 존재하지 않습니다");
+            util.printLog("해당하는 날짜에 해당하는 일정이 존재하지 않습니다");
 
         //참가자 보기 클릭
         util.isElementPresent(By.xpath("//a[@class='btn_sy _view_attendee']")).click();
@@ -290,7 +290,7 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
         if (util.waitForIsElementPresent(By.xpath("//span[@class='txt_member ellipsis' and contains(text(),'" + module.Attendee + "')]")).isDisplayed()) {
             util.printLog("해당하는 날짜의 약속에 참가자:" + module.Attendee + " 가 있습니다.");
         } else
-            System.out.print("해당하는 날짜의 약속에 참가자가 존재하지 않습니다");
+            util.printLog("해당하는 날짜의 약속에 참가자가 존재하지 않습니다");
     }
 
 
@@ -312,7 +312,7 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
         }
         //음력으로 설정 되어 있는지 확인
         if (util.isElementPresent(By.xpath("//p[@class='_converted_solar_date time_default no_view']")).isDisplayed()) {
-            System.out.print("음력입니다");
+            util.printLog("음력입니다");
         } else {
             util.isElementPresent(By.xpath("//div[@class='selectbox-label']")).click();
             util.isElementPresent(By.xpath("//li[contains(text(),'음력')]")).click();
@@ -355,7 +355,7 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
             util.printLog("해당하는 날짜에 음력약속 \n 제목:" + module.contents + " 일정이 존재합니다");
             util.waitForIsElementPresent(By.className("_modify_text"));
         } else
-            System.out.print("해당하는 날짜에 해당하는 일정이 존재하지 않습니다");
+            util.printLog("해당하는 날짜에 해당하는 일정이 존재하지 않습니다");
 
         //참가자 보기 클릭
         util.isElementPresent(By.xpath("//a[@class='btn_sy _view_attendee']")).click();
@@ -364,7 +364,7 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
         if (util.waitForIsElementPresent(By.xpath("//span[@class='txt_member ellipsis' and contains(text(),'" + module.Attendee + "')]")).isDisplayed()) {
             util.printLog("해당하는 날짜의 약속에 참가자:" + module.Attendee + " 가 있습니다.");
         } else
-            System.out.print("해당하는 날짜의 약속에 참가자가 존재하지 않습니다");
+            util.printLog("해당하는 날짜의 약속에 참가자가 존재하지 않습니다");
     }
 
     /*
@@ -388,7 +388,7 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
         //음력으로 설정 되어 있는지 확인
         if(util.isElementPresent(By.xpath("//p[@class='_converted_solar_date time_default no_view']")).isDisplayed())
         {
-            System.out.print("음력입니다");
+            util.printLog("음력입니다");
         }
         else
         {
@@ -424,8 +424,8 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
         //범위저장
         repeatStartDate = util.isElementPresent(By.id("repeat_start_date")).getAttribute("value");
         repeatEndDate = util.isElementPresent(By.id("repeat_end_date")).getAttribute("value");
-        System.out.println("생성될 일정 반복 시작일은 : " + repeatStartDate);
-        System.out.println("생성될 일정 반복 종료일은 : " + repeatEndDate);
+        util.printLog("생성될 일정 반복 시작일은 : " + repeatStartDate);
+        util.printLog("생성될 일정 반복 종료일은 : " + repeatEndDate);
 
         //module.CurrentDate(util,repeatStartDate);
 
@@ -457,7 +457,7 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
     public void TC_13_일정_일정쓰기_반복일정_Assert_Test() throws Exception {
         URL = module.calURL + "#{\"sSection\":\"scheduleMain\",\"oParameter\":{\"sViewType\":\"month\",\"sDate\":\"" + module.StartDate + "\"}}";
         util.get(URL);
-        //System.out.println("\nDate : "+module.StartDate);
+        //util.printLog("\nDate : "+module.StartDate);
 
         module.CurrentDate(util);
 
@@ -465,7 +465,7 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
         int todayYear = Integer.parseInt(module.StartDate.substring(0, 4));
         int todayMonth = Integer.parseInt(module.StartDate.substring(5, 7));
         int todayDate = Integer.parseInt(module.StartDate.substring(8, 10));
-        //System.out.println(year+"."+month+"."+day);
+        //util.printLog(year+"."+month+"."+day);
 
         int startYear = Integer.parseInt(repeatStartDate.substring(0, 4));
         int startMonth = Integer.parseInt(repeatStartDate.substring(5, 7));
@@ -495,9 +495,9 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
         endCal.set(Calendar.MONTH, endMonth);
         endCal.set(Calendar.DATE, endDate);
 
-        //System.out.println(todayCal.getTime().toString());
-        System.out.println("일정 반복 시작일은 :" + startCal.getTime().toString());
-        System.out.println("일정 반복 종료일은 :" + endCal.getTime().toString());
+        //util.printLog(todayCal.getTime().toString());
+        util.printLog("일정 반복 시작일은 :" + startCal.getTime().toString());
+        util.printLog("일정 반복 종료일은 :" + endCal.getTime().toString());
 
         //반복 일정의 총 개수를 구함
         int count = 0;
@@ -505,7 +505,7 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
             count++;
             startCal.add(Calendar.DATE, 1);
         }
-        System.out.println("시작일과 종료일은 " + count + "입니다.");
+        util.printLog("시작일과 종료일은 " + count + "입니다.");
 
 
         //내일 날짜
@@ -517,7 +517,7 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
             util.printLog("해당하는 날짜에 음력약속 [제목:" + module.contents + "] 일정이 존재합니다");
             util.waitForIsElementPresent(By.className("_modify_text"));
         } else
-            System.out.print("해당하는 날짜에 해당하는 일정이 존재하지 않습니다");
+            util.printLog("해당하는 날짜에 해당하는 일정이 존재하지 않습니다");
 
         /*
         //참가자 보기 클릭
@@ -528,7 +528,7 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
         {
             util.printLog("해당하는 날짜의 약속에 참가자:" + module.Attendee + " 가 있습니다.");
         } else
-            System.out.print("해당하는 날짜의 약속에 참가자가 존재하지 않습니다");
+            util.printLog("해당하는 날짜의 약속에 참가자가 존재하지 않습니다");
             */
     }
 
@@ -578,7 +578,7 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
             util.printLog("해당하는 날짜에 일정 \n 제목:" + module.contents + " 일정이 존재합니다");
             util.waitForIsElementPresent(By.className("_modify_text"));
         } else
-            System.out.print("해당하는 날짜에 해당하는 일정이 존재하지 않습니다");
+            util.printLog("해당하는 날짜에 해당하는 일정이 존재하지 않습니다");
         //비공개 아이콘 노출 확인
         assertTrue(util.waitForIsElementPresent(By.className("ico_lock")).isDisplayed());
 
@@ -589,7 +589,7 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
             if (util.waitForIsElementPresent(By.xpath("//span[@class='txt_member ellipsis' and contains(text(),'" + module.Attendee + "')]")).isDisplayed()) {
                 util.printLog("해당하는 날짜의 약속에 참가자:" + module.Attendee + " 가 있습니다.");
             } else
-                System.out.print("해당하는 날짜의 약속에 참가자가 존재하지 않습니다");
+                util.printLog("해당하는 날짜의 약속에 참가자가 존재하지 않습니다");
         }
     }
 
@@ -631,7 +631,7 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
             util.printLog("해당하는 날짜에 일정 \n 제목:" + module.contents + " 일정이 존재합니다");
             util.waitForIsElementPresent(By.className("_modify_text"));
         } else
-            System.out.print("해당하는 날짜에 해당하는 일정이 존재하지 않습니다");
+            util.printLog("해당하는 날짜에 해당하는 일정이 존재하지 않습니다");
 
         //참가자 보기 클릭
         if(util.isElementPresentNotExist(By.xpath("//a[@class='btn_sy _view_attendee']"))) {
@@ -640,7 +640,7 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
             if (util.waitForIsElementPresent(By.xpath("//span[@class='txt_member ellipsis' and contains(text(),'" + module.Attendee + "')]")).isDisplayed()) {
                 util.printLog("해당하는 날짜의 약속에 참가자:" + module.Attendee + " 가 있습니다.");
             } else
-                System.out.print("해당하는 날짜의 약속에 참가자가 존재하지 않습니다");
+                util.printLog("해당하는 날짜의 약속에 참가자가 존재하지 않습니다");
         }
     }
 
@@ -738,7 +738,7 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
             util.printLog("해당하는 날짜에 일정 \n 제목:" + module.contents + " 일정이 존재합니다");
             util.waitForIsElementPresent(By.className("_modify_text"));
         } else
-            System.out.print("해당하는 날짜에 해당하는 일정이 존재하지 않습니다");
+            util.printLog("해당하는 날짜에 해당하는 일정이 존재하지 않습니다");
 
         //참가자 보기 클릭
         if(util.isElementPresentNotExist(By.xpath("//a[@class='btn_sy _view_attendee']"))) {
@@ -747,7 +747,7 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
             if (util.waitForIsElementPresent(By.xpath("//span[@class='txt_member ellipsis' and contains(text(),'" + module.Attendee + "')]")).isDisplayed()) {
                 util.printLog("해당하는 날짜의 약속에 참가자:" + module.Attendee + " 가 있습니다.");
             } else
-                System.out.print("해당하는 날짜의 약속에 참가자가 존재하지 않습니다");
+                util.printLog("해당하는 날짜의 약속에 참가자가 존재하지 않습니다");
         }
     }
 
@@ -805,19 +805,19 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
         {
             util.isElementPresent(By.xpath("//a[contains(@key,'"+dayIndex+"')][contains(@class,'_more_schedule')]")).click();
             NumOfEvent = util.waitAndGetXpathCount(By.xpath("html/body/div[5]/div/ul/li"));
-            //System.out.println(NumOfEvent);
+            //util.printLog(NumOfEvent);
 
             //선택한 날짜에 일정이 2개 이상일 경우 일치하는 제목 찾아서 클릭
             //제목이 동일한 일정이 있을경우???
             for(int i = 1; i < NumOfEvent+1; i++)
             {
-                //System.out.println(module.contents);
+                //util.printLog(module.contents);
                 Subject = util.waitForIsElementPresent(By.xpath("html/body/div[5]/div/ul/li["+i+"]/a")).getText();
-                //System.out.println(i+"번 일정의 제목은 : "+Subject+" 입니다.");
+                //util.printLog(i+"번 일정의 제목은 : "+Subject+" 입니다.");
                 //util.scrollToElement(By.xpath("html/body/div[5]/div/ul/li["+i+"]/a"));
                 if(module.contents.contains(Subject))
                 {
-                    System.out.println("제목 : "+Subject+" 일정을 삭제합니다");
+                    util.printLog("제목 : "+Subject+" 일정을 삭제합니다");
                     util.waitForIsElementPresent(By.xpath("html/body/div[5]/div/ul/li["+i+"]/a")).click();
                 }
             }
@@ -859,19 +859,19 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
         {
             util.isElementPresent(By.xpath("//a[contains(@key,'"+dayIndex+"')][contains(@class,'_more_schedule')]")).click();
             NumOfEvent = util.waitAndGetXpathCount(By.xpath("html/body/div[5]/div/ul/li"));
-            //System.out.println(NumOfEvent);
+            //util.printLog(NumOfEvent);
 
             //선택한 날짜에 일정이 2개 이상일 경우 일치하는 제목 찾아서 클릭
             //제목이 동일한 일정이 있을경우???
             for(int i = 1; i < NumOfEvent+1; i++)
             {
-                //System.out.println(module.contents);
+                //util.printLog(module.contents);
                 Subject = util.waitForIsElementPresent(By.xpath("html/body/div[5]/div/ul/li["+i+"]/a")).getText();
-                //System.out.println(i+"번 일정의 제목은 : "+Subject+" 입니다.");
+                //util.printLog(i+"번 일정의 제목은 : "+Subject+" 입니다.");
                 //util.scrollToElement(By.xpath("html/body/div[5]/div/ul/li["+i+"]/a"));
                 if(module.contents.contains(Subject))
                 {
-                    System.out.println("제목 : "+Subject+" 일정을 삭제합니다");
+                    util.printLog("제목 : "+Subject+" 일정을 삭제합니다");
                     util.waitForIsElementPresent(By.xpath("html/body/div[5]/div/ul/li["+i+"]/a")).click();
                 }
             }
@@ -912,19 +912,19 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
         {
             util.isElementPresent(By.xpath("//a[contains(@key,'"+dayIndex+"')][contains(@class,'_more_schedule')]")).click();
             NumOfEvent = util.waitAndGetXpathCount(By.xpath("html/body/div[5]/div/ul/li"));
-            System.out.println(NumOfEvent);
+            //util.printLog(NumOfEvent);
 
             //선택한 날짜에 일정이 2개 이상일 경우 일치하는 제목 찾아서 클릭
             //제목이 동일한 일정이 있을경우???
             for(int i = 1; i < NumOfEvent+1; i++)
                 {
-                    System.out.println(module.contents);
+                    util.printLog(module.contents);
                     Subject = util.waitForIsElementPresent(By.xpath("html/body/div[5]/div/ul/li["+i+"]/a")).getText();
-                    System.out.println(i+"번 일정의 제목은 : "+Subject+" 입니다.");
+                    util.printLog(i+"번 일정의 제목은 : "+Subject+" 입니다.");
                     //util.scrollToElement(By.xpath("html/body/div[5]/div/ul/li["+i+"]/a"));
                     if(module.contents == Subject)
                     {
-                        System.out.println("제목 : "+Subject+" 일정을 삭제합니다");
+                        util.printLog("제목 : "+Subject+" 일정을 삭제합니다");
                         util.waitForIsElementPresent(By.xpath("html/body/div[5]/div/ul/li["+i+"]/a")).click();
                     }
                 }
@@ -949,7 +949,7 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
     public void TC_98_일정_일정쓰기_반복일정삭제_Test() throws Exception {
         URL = module.calURL + "#{\"sSection\":\"scheduleMain\",\"oParameter\":{\"sViewType\":\"month\",\"sDate\":\"" + module.StartDate + "\"}}";
         util.get(URL);
-        //System.out.println("\nDate : "+module.StartDate);
+        //util.printLog("\nDate : "+module.StartDate);
 
         //일정 간편보기
         util.clickAndWait(By.xpath("//a[contains(text(),'" + module.contents + "')]"));
@@ -978,7 +978,7 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
 
         URL = module.calURL + "#{\"sSection\":\"scheduleMain\",\"oParameter\":{\"sViewType\":\"month\",\"sDate\":\"" + module.StartDate + "\"}}";
         util.get(URL);
-        //System.out.println("\nDate : "+module.StartDate);
+        //util.printLog("\nDate : "+module.StartDate);
 
         //선택한 날짜의 dayindex 를 가져옴
         dayIndex = util.waitForIsElementPresent(By.xpath("//strong[contains(text(),'" + module.StartDate.substring(8, 10) + "')]")).getAttribute("dayindex");
@@ -1004,7 +1004,7 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
         if(util.isElementPresentNotExist(By.xpath("//a[contains(@key,'"+dayIndex+"')][contains(@class,'_more_schedule')]")))
         {
             /*NumOfEvent = util.waitForIsElementPresent(By.xpath("//a[contains(@key,'"+dayIndex+"')]")).getText().toString();
-            System.out.println(NumOfEvent);
+            util.printLog(NumOfEvent);
             //일정이 10개 이상일경우
             if(NumOfEvent.length() == 3)
                 NumOfEvent = NumOfEvent.substring(0,2);
@@ -1016,7 +1016,7 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
 
             util.isElementPresent(By.xpath("//a[contains(@key,'"+dayIndex+"')][contains(@class,'_more_schedule')]")).click();
             NumOfEvent = util.waitAndGetXpathCount(By.xpath("html/body/div[5]/div/ul/li"));
-            System.out.println(NumOfEvent);
+            //util.printLog(NumOfEvent);
 
             //선택한 날짜에 일정이 2개 이상일 경우 일치하는 제목 찾아서 클릭
             //제목이 동일한 일정이 있을경우???
@@ -1026,9 +1026,9 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
                 ///html/body/div[5]/div/ul/li[1]
                 //*[@id="month_frame"]/div/div/div[1]/div[4]/table[2]/tbody/tr[2]/td[5]/div/div/a
                 //Subject = util.isElementPresent(By.xpath("//*[@id='month_frame']/div/div/div[1]/div["+divValue+"]/table[2]/tbody/tr["+i+"]/td["+ tdValue +"]/div/div/a")).getText();
-                System.out.println(module.contents);
+                util.printLog(module.contents);
                 Subject = util.waitForIsElementPresent(By.xpath("html/body/div[5]/div/ul/li["+i+"]/a")).getText();
-                System.out.println(i+"번 일정의 제목은 : "+Subject);
+                util.printLog(i+"번 일정의 제목은 : "+Subject);
                 if(module.contents == Subject)
                 {
                     util.waitForIsElementPresent(By.xpath("html/body/div[5]/div/ul/li["+i+"]/a")).click();

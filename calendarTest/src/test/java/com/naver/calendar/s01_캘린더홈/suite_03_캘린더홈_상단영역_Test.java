@@ -81,7 +81,7 @@ public class suite_03_캘린더홈_상단영역_Test extends Testcase {
         util.waitForIsElementPresent(By.className("btn_back_calender"));
         util.printLog(util.waitForIsElementPresent(By.className("_title")).getText());
 
-        SearchResult = util.findElement(By.className("keyword")).getText();
+        SearchResult = util.isElementPresent(By.className("keyword")).getText();
         assertTrue(SearchResult.contains(searchTitle));
 
 

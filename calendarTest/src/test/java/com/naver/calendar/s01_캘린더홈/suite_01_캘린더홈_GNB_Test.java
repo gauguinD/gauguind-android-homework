@@ -106,7 +106,7 @@ public class suite_01_캘린더홈_GNB_Test extends Testcase {
         // 사용자 메일에 사용자 아이디 포함하고 있는지 확인
         util.clickAndWait(By.className("gnb_name"));
         util.waitForIsElementPresent(By.className("gnb_mail_address"));
-        assertTrue(util.findElement(By.className("gnb_mail_address")).getText().contains(TestIds.CalUser.getId()));
+        assertTrue(util.isElementPresent(By.className("gnb_mail_address")).getText().contains(TestIds.CalUser.getId()));
 
          }
 
@@ -274,7 +274,7 @@ public class suite_01_캘린더홈_GNB_Test extends Testcase {
 
         // 알림이 없을때
         // 알림 없음 문구 노출 확인
-        util.findElement(By.className("svc_msg_box"));
+        util.isElementPresent(By.className("svc_msg_box"));
     }
 
     /*
