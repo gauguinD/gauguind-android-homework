@@ -37,10 +37,10 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
      * Step : 일정 > 일정,약속쓰기 클릭
      * Result : 일정쓰기 페이지로 이동됨
      */
-    //@Test
+    @Test
     public void TC_01_일정_일정쓰기_Test() throws Exception {
         util.clickAndWait(By.xpath("//span[contains(text(),'약속쓰기')]"));
-        assertTrue(util.findElement(By.linkText("캘린더로 돌아가기")).isDisplayed());
+        assertTrue(util.isElementPresent(By.linkText("캘린더로 돌아가기")).isDisplayed());
     }
 
 
@@ -49,26 +49,26 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
      * Result : 해당하는 날짜에 시간 일정 생성 됨
      * URL : http://calendar.naver.com/#{"sSection":"scheduleMain","oParameter":{"sViewType":"month","sDate":""+module.StartDate+"\"}}";
      */
-    //@Test
+    @Test
     public void TC_01_일정_일정쓰기_시간일정_Test() throws Exception {
 
         util.clickAndWait(By.xpath("//span[contains(text(),'약속쓰기')]"));
-        assertTrue(util.findElement(By.linkText("캘린더로 돌아가기")).isDisplayed());
+        assertTrue(util.isElementPresent(By.linkText("캘린더로 돌아가기")).isDisplayed());
 
         //시간 일정쓰기 설정 되어 있는지 확인
         if ((util.isElementPresent(By.xpath("//a[@class='_set_timezone change_time']")).isDisplayed())) {
         } else {
-            util.findElement(By.id("ch1_1")).click();
+            util.isElementPresent(By.id("ch1_1")).click();
         }
 
         //제목 입력
-        util.findElement(By.id("tx0_0")).sendKeys(module.contents);
+        util.isElementPresent(By.id("tx0_0")).sendKeys(module.contents);
         //시작 날짜 입력
-        util.findElement(By.id("start_date")).clear();
-        util.findElement(By.id("start_date")).sendKeys(module.StartDate);
+        util.isElementPresent(By.id("start_date")).clear();
+        util.isElementPresent(By.id("start_date")).sendKeys(module.StartDate);
         //종료 날짜 입력
-        util.findElement(By.id("end_date")).clear();
-        util.findElement(By.id("end_date")).sendKeys(module.EndDate);
+        util.isElementPresent(By.id("end_date")).clear();
+        util.isElementPresent(By.id("end_date")).sendKeys(module.EndDate);
 
         util.clickAndWait(By.xpath("//button[@class ='btn_sys pos_save']"));
         util.waitForIsElementPresent(By.xpath("//button[contains(@class,'_go_task type_schedule todo')]"));
@@ -84,21 +84,21 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
     public void TC_02_일정_일정쓰기_시간종일일정_Test() throws Exception {
 
         util.clickAndWait(By.xpath("//span[contains(text(),'약속쓰기')]"));
-        assertTrue(util.findElement(By.linkText("캘린더로 돌아가기")).isDisplayed());
+        assertTrue(util.isElementPresent(By.linkText("캘린더로 돌아가기")).isDisplayed());
 
         //종일 일정쓰기 설정 되어 있는지 확인
         if ((util.isElementPresent(By.xpath("//a[@class='_set_timezone change_time']")).isDisplayed())) {
         } else {
-            util.findElement(By.id("ch1_1")).click();
+            util.isElementPresent(By.id("ch1_1")).click();
         }
         //제목 입력
-        util.findElement(By.id("tx0_0")).sendKeys(module.contents);
+        util.isElementPresent(By.id("tx0_0")).sendKeys(module.contents);
         //시작 날짜 입력
-        util.findElement(By.id("start_date")).clear();
-        util.findElement(By.id("start_date")).sendKeys(module.StartDate);
+        util.isElementPresent(By.id("start_date")).clear();
+        util.isElementPresent(By.id("start_date")).sendKeys(module.StartDate);
         //종료 날짜 입력
-        util.findElement(By.id("end_date")).clear();
-        util.findElement(By.id("end_date")).sendKeys(module.EndTimeDate);
+        util.isElementPresent(By.id("end_date")).clear();
+        util.isElementPresent(By.id("end_date")).sendKeys(module.EndTimeDate);
 
         util.clickAndWait(By.xpath("//button[@class ='btn_sys pos_save']"));
         util.waitForIsElementPresent(By.xpath("//button[contains(@class,'_go_task type_schedule todo')]"));
@@ -129,25 +129,25 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
     public void TC_04_일정_일정쓰기_종일일정_Test() throws Exception {
 
         util.clickAndWait(By.xpath("//span[contains(text(),'약속쓰기')]"));
-        assertTrue(util.findElement(By.linkText("캘린더로 돌아가기")).isDisplayed());
+        assertTrue(util.isElementPresent(By.linkText("캘린더로 돌아가기")).isDisplayed());
 
         //종일 일정쓰기 설정 되어 있는지 확인
         if (!(util.isElementPresent(By.xpath("//a[@class='_set_timezone change_time']")).isDisplayed())) {
         } else {
-            util.findElement(By.id("ch1_1")).click();
+            util.isElementPresent(By.id("ch1_1")).click();
         }
 
         util.waitForIsElementPresent(By.xpath("//*[@id='holder']/div/div[1]/a[2]"));
         //제목 입력
-        util.findElement(By.id("tx0_0")).sendKeys(module.contents);
+        util.isElementPresent(By.id("tx0_0")).sendKeys(module.contents);
 
         //시작 날짜 입력
-        util.findElement(By.id("start_date")).clear();
-        util.findElement(By.id("start_date")).sendKeys(module.StartDate);
+        util.isElementPresent(By.id("start_date")).clear();
+        util.isElementPresent(By.id("start_date")).sendKeys(module.StartDate);
 
         //종료 날짜 입력
-        util.findElement(By.id("end_date")).clear();
-        util.findElement(By.id("end_date")).sendKeys(module.EndDate);
+        util.isElementPresent(By.id("end_date")).clear();
+        util.isElementPresent(By.id("end_date")).sendKeys(module.EndDate);
 
         //저장하기
         util.clickAndWait(By.xpath("//button[@class ='btn_sys pos_save']"));
@@ -179,40 +179,40 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
     //@Test
     public void TC_06_일정_일정쓰기_음력일정_Test() throws Exception {
         util.clickAndWait(By.xpath("//span[contains(text(),'약속쓰기')]"));
-        assertTrue(util.findElement(By.linkText("캘린더로 돌아가기")).isDisplayed());
+        assertTrue(util.isElementPresent(By.linkText("캘린더로 돌아가기")).isDisplayed());
 
         //종일 일정쓰기 인지 확인
         if (!(util.isElementPresent(By.xpath("//a[@class='_set_timezone change_time']")).isDisplayed())) {
         } else {
-            util.findElement(By.id("ch1_1")).click();
+            util.isElementPresent(By.id("ch1_1")).click();
         }
 
         //음력으로 설정 되어 있는지 확인
-        if (util.findElement(By.xpath("//p[@class='_converted_solar_date time_default no_view']")).isDisplayed()) {
+        if (util.isElementPresent(By.xpath("//p[@class='_converted_solar_date time_default no_view']")).isDisplayed()) {
             System.out.print("음력입니다");
         } else {
-            util.findElement(By.xpath("//div[@class='selectbox-label']")).click();
-            util.findElement(By.xpath("//li[contains(text(),'음력')]")).click();
+            util.isElementPresent(By.xpath("//div[@class='selectbox-label']")).click();
+            util.isElementPresent(By.xpath("//li[contains(text(),'음력')]")).click();
         }
 
         util.waitForIsElementPresent(By.xpath("//*[@id='holder']/div/div[1]/a[2]"));
 
         //제목 입력
-        util.findElement(By.id("tx0_0")).sendKeys(module.contents);
+        util.isElementPresent(By.id("tx0_0")).sendKeys(module.contents);
 
         //시작 날짜 입력
-        util.findElement(By.id("start_date")).clear();
-        util.findElement(By.id("start_date")).sendKeys(module.StartDate);
+        util.isElementPresent(By.id("start_date")).clear();
+        util.isElementPresent(By.id("start_date")).sendKeys(module.StartDate);
 
         //종료 날짜 입력
-        util.findElement(By.id("end_date")).clear();
-        util.findElement(By.id("end_date")).sendKeys(module.EndDate);
+        util.isElementPresent(By.id("end_date")).clear();
+        util.isElementPresent(By.id("end_date")).sendKeys(module.EndDate);
 
         //음력 날짜 저장
         //지정한 양력날짜가 아닌 새로운 양력날짜로 저장 되기 때문에 LunarDate로 새로 저장
         //나중에 Assert할때도 해당 정보 전달
         String str;
-        str = util.findElement(By.xpath("//p[@class='_converted_solar_date time_default no_view']")).getText();
+        str = util.isElementPresent(By.xpath("//p[@class='_converted_solar_date time_default no_view']")).getText();
         LunarDate = str.substring(5).replace(".", "-");
 
         //저장하기
@@ -245,23 +245,23 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
     public void TC_08_일정_일정쓰기_약속일정_Test() throws Exception {
 
         util.clickAndWait(By.xpath("//span[contains(text(),'약속쓰기')]"));
-        assertTrue(util.findElement(By.linkText("캘린더로 돌아가기")).isDisplayed());
+        assertTrue(util.isElementPresent(By.linkText("캘린더로 돌아가기")).isDisplayed());
 
         //제목 입력
-        util.findElement(By.id("tx0_0")).sendKeys(module.contents);
+        util.isElementPresent(By.id("tx0_0")).sendKeys(module.contents);
 
         //시작 날짜 입력
-        util.findElement(By.id("start_date")).clear();
-        util.findElement(By.id("start_date")).sendKeys(module.StartDate);
+        util.isElementPresent(By.id("start_date")).clear();
+        util.isElementPresent(By.id("start_date")).sendKeys(module.StartDate);
 
         //종료 날짜 입력
-        util.findElement(By.id("end_date")).clear();
-        util.findElement(By.id("end_date")).sendKeys(module.EndDate);
+        util.isElementPresent(By.id("end_date")).clear();
+        util.isElementPresent(By.id("end_date")).sendKeys(module.EndDate);
 
         //참석자 초대
-        util.findElement(By.id("nhn_cp_entry")).sendKeys(module.Attendee);
-        util.findElement(By.className("add_btn")).click();
-        assertTrue(util.findElement(By.xpath("//span[@class='mail _open_popup']")).getAttribute("title").contains(module.Attendee));
+        util.isElementPresent(By.id("nhn_cp_entry")).sendKeys(module.Attendee);
+        util.isElementPresent(By.className("add_btn")).click();
+        assertTrue(util.isElementPresent(By.xpath("//span[@class='mail _open_popup']")).getAttribute("title").contains(module.Attendee));
 
         //저장하기
         util.clickAndWait(By.xpath("//button[@class ='btn_sys pos_save']"));
@@ -284,7 +284,7 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
             System.out.print("해당하는 날짜에 해당하는 일정이 존재하지 않습니다");
 
         //참가자 보기 클릭
-        util.findElement(By.xpath("//a[@class='btn_sy _view_attendee']")).click();
+        util.isElementPresent(By.xpath("//a[@class='btn_sy _view_attendee']")).click();
 
         //해당하는 참가자 있는지 확인
         if (util.waitForIsElementPresent(By.xpath("//span[@class='txt_member ellipsis' and contains(text(),'" + module.Attendee + "')]")).isDisplayed()) {
@@ -303,38 +303,38 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
     public void TC_10_일정_일정쓰기_음력약속일정_Test() throws Exception {
 
         util.clickAndWait(By.xpath("//span[contains(text(),'약속쓰기')]"));
-        assertTrue(util.findElement(By.linkText("캘린더로 돌아가기")).isDisplayed());
+        assertTrue(util.isElementPresent(By.linkText("캘린더로 돌아가기")).isDisplayed());
 
         //종일 일정쓰기 설정 되어 있는지 확인
         if (!(util.isElementPresent(By.xpath("//a[@class='_set_timezone change_time']")).isDisplayed())) {
         } else {
-            util.findElement(By.id("ch1_1")).click();
+            util.isElementPresent(By.id("ch1_1")).click();
         }
         //음력으로 설정 되어 있는지 확인
-        if (util.findElement(By.xpath("//p[@class='_converted_solar_date time_default no_view']")).isDisplayed()) {
+        if (util.isElementPresent(By.xpath("//p[@class='_converted_solar_date time_default no_view']")).isDisplayed()) {
             System.out.print("음력입니다");
         } else {
-            util.findElement(By.xpath("//div[@class='selectbox-label']")).click();
-            util.findElement(By.xpath("//li[contains(text(),'음력')]")).click();
+            util.isElementPresent(By.xpath("//div[@class='selectbox-label']")).click();
+            util.isElementPresent(By.xpath("//li[contains(text(),'음력')]")).click();
         }
         //제목 입력
-        util.findElement(By.id("tx0_0")).sendKeys(module.contents);
+        util.isElementPresent(By.id("tx0_0")).sendKeys(module.contents);
         //시작 날짜 입력
-        util.findElement(By.id("start_date")).clear();
-        util.findElement(By.id("start_date")).sendKeys(module.StartDate);
+        util.isElementPresent(By.id("start_date")).clear();
+        util.isElementPresent(By.id("start_date")).sendKeys(module.StartDate);
         //종료 날짜 입력
-        util.findElement(By.id("end_date")).clear();
-        util.findElement(By.id("end_date")).sendKeys(module.EndDate);
+        util.isElementPresent(By.id("end_date")).clear();
+        util.isElementPresent(By.id("end_date")).sendKeys(module.EndDate);
         //참석자 초대
-        util.findElement(By.id("nhn_cp_entry")).sendKeys(module.Attendee);
-        util.findElement(By.className("add_btn")).click();
-        assertTrue(util.findElement(By.xpath("//span[@class='mail _open_popup']")).getAttribute("title").contains(module.Attendee));
+        util.isElementPresent(By.id("nhn_cp_entry")).sendKeys(module.Attendee);
+        util.isElementPresent(By.className("add_btn")).click();
+        assertTrue(util.isElementPresent(By.xpath("//span[@class='mail _open_popup']")).getAttribute("title").contains(module.Attendee));
 
         //음력 날짜 저장
         //지정한 양력날짜가 아닌 새로운 양력날짜로 저장 되기 때문에 LunarDate로 새로 저장
         //나중에 Assert할때도 해당 정보 전달
         String str;
-        str = util.findElement(By.xpath("//p[@class='_converted_solar_date time_default no_view']")).getText();
+        str = util.isElementPresent(By.xpath("//p[@class='_converted_solar_date time_default no_view']")).getText();
         LunarDate = str.substring(5).replace(".", "-");
 
         //저장하기
@@ -358,7 +358,7 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
             System.out.print("해당하는 날짜에 해당하는 일정이 존재하지 않습니다");
 
         //참가자 보기 클릭
-        util.findElement(By.xpath("//a[@class='btn_sy _view_attendee']")).click();
+        util.isElementPresent(By.xpath("//a[@class='btn_sy _view_attendee']")).click();
 
         //해당하는 참가자 있는지 확인
         if (util.waitForIsElementPresent(By.xpath("//span[@class='txt_member ellipsis' and contains(text(),'" + module.Attendee + "')]")).isDisplayed()) {
@@ -376,54 +376,54 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
     public void TC_12_일정_일정쓰기_반복일정_Test() throws Exception {
 
         util.clickAndWait(By.xpath("//span[contains(text(),'약속쓰기')]"));
-        assertTrue(util.findElement(By.linkText("캘린더로 돌아가기")).isDisplayed());
+        assertTrue(util.isElementPresent(By.linkText("캘린더로 돌아가기")).isDisplayed());
 
         /*
         //종일 일정쓰기 설정 되어 있는지 확인
         if(!(util.isElementPresent(By.xpath("//a[@class='_set_timezone change_time']")).isDisplayed())){}
         else
         {
-            util.findElement(By.id("ch1_1")).click();
+            util.isElementPresent(By.id("ch1_1")).click();
         }
         //음력으로 설정 되어 있는지 확인
-        if(util.findElement(By.xpath("//p[@class='_converted_solar_date time_default no_view']")).isDisplayed())
+        if(util.isElementPresent(By.xpath("//p[@class='_converted_solar_date time_default no_view']")).isDisplayed())
         {
             System.out.print("음력입니다");
         }
         else
         {
-            util.findElement(By.xpath("//div[@class='selectbox-label']")).click();
-            util.findElement(By.xpath("//li[contains(text(),'음력')]")).click();
+            util.isElementPresent(By.xpath("//div[@class='selectbox-label']")).click();
+            util.isElementPresent(By.xpath("//li[contains(text(),'음력')]")).click();
         }
         */
 
         //제목 입력
-        util.findElement(By.id("tx0_0")).sendKeys(module.contents);
+        util.isElementPresent(By.id("tx0_0")).sendKeys(module.contents);
         //시작 날짜 입력
-        util.findElement(By.id("start_date")).clear();
-        util.findElement(By.id("start_date")).sendKeys(module.StartDate);
+        util.isElementPresent(By.id("start_date")).clear();
+        util.isElementPresent(By.id("start_date")).sendKeys(module.StartDate);
         //종료 날짜 입력
-        util.findElement(By.id("end_date")).clear();
-        util.findElement(By.id("end_date")).sendKeys(module.EndDate);
+        util.isElementPresent(By.id("end_date")).clear();
+        util.isElementPresent(By.id("end_date")).sendKeys(module.EndDate);
 
         //반복설정 옵션 클릭
         util.clickAndWait(By.xpath("//a[@class='_repeat_btn btn_sy repeat img_ri']"));
         //빈도 설정
         util.clickAndWait(By.xpath("//div[@class='_frequency_select  selectbox13']"));
-        //util.findElement(By.xpath("//li[contains(text(),'"+module.everyDay+"')]")).click();
-        //util.findElement(By.xpath("//li[contains(text(),'"+module.everyWeekDay+"')]")).click();
-        util.findElement(By.xpath("//li[contains(text(),'" + module.everyWeeks + "')]")).click();
-        //util.findElement(By.xpath("//li[contains(text(),'"+module.everyMonth+"')]")).click();
-        //util.findElement(By.xpath("//li[contains(text(),'"+module.everyYear+"')]")).click();
+        //util.isElementPresent(By.xpath("//li[contains(text(),'"+module.everyDay+"')]")).click();
+        //util.isElementPresent(By.xpath("//li[contains(text(),'"+module.everyWeekDay+"')]")).click();
+        util.isElementPresent(By.xpath("//li[contains(text(),'" + module.everyWeeks + "')]")).click();
+        //util.isElementPresent(By.xpath("//li[contains(text(),'"+module.everyMonth+"')]")).click();
+        //util.isElementPresent(By.xpath("//li[contains(text(),'"+module.everyYear+"')]")).click();
 
         //무한반복 제거(매주, 매주 월-금, 매월, 매년)
-        if (!util.findElement(By.id("repeat_end_date")).isEnabled()) {
+        if (!util.isElementPresent(By.id("repeat_end_date")).isEnabled()) {
             util.clickAndWait(By.id("ch1_12"));
         }
 
         //범위저장
-        repeatStartDate = util.findElement(By.id("repeat_start_date")).getAttribute("value");
-        repeatEndDate = util.findElement(By.id("repeat_end_date")).getAttribute("value");
+        repeatStartDate = util.isElementPresent(By.id("repeat_start_date")).getAttribute("value");
+        repeatEndDate = util.isElementPresent(By.id("repeat_end_date")).getAttribute("value");
         System.out.println("생성될 일정 반복 시작일은 : " + repeatStartDate);
         System.out.println("생성될 일정 반복 종료일은 : " + repeatEndDate);
 
@@ -434,15 +434,15 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
 
         /*
         //참석자 초대
-        util.findElement(By.id("nhn_cp_entry")).sendKeys(module.Attendee);
-        util.findElement(By.className("add_btn")).click();
-        assertTrue(util.findElement(By.xpath("//span[@class='mail _open_popup']")).getAttribute("title").contains(module.Attendee));
+        util.isElementPresent(By.id("nhn_cp_entry")).sendKeys(module.Attendee);
+        util.isElementPresent(By.className("add_btn")).click();
+        assertTrue(util.isElementPresent(By.xpath("//span[@class='mail _open_popup']")).getAttribute("title").contains(module.Attendee));
 
         //음력 날짜 저장
         //지정한 양력날짜가 아닌 새로운 양력날짜로 저장 되기 때문에 LunarDate로 새로 저장
         //나중에 Assert할때도 해당 정보 전달
         String str;
-        str = util.findElement(By.xpath("//p[@class='_converted_solar_date time_default no_view']")).getText();
+        str = util.isElementPresent(By.xpath("//p[@class='_converted_solar_date time_default no_view']")).getText();
         LunarDate = str.substring(5).replace(".","-");
         */
 
@@ -521,7 +521,7 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
 
         /*
         //참가자 보기 클릭
-        util.findElement(By.xpath("//a[@class='btn_sy _view_attendee']")).click();
+        util.isElementPresent(By.xpath("//a[@class='btn_sy _view_attendee']")).click();
 
         //해당하는 참가자 있는지 확인
         if (util.waitForIsElementPresent(By.xpath("//span[@class='txt_member ellipsis' and contains(text(),'"+module.Attendee+"')]")).isDisplayed())
@@ -541,21 +541,21 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
     public void TC_14_일정_일정쓰기_공유숨김일정_Test() throws Exception {
 
         util.clickAndWait(By.xpath("//span[contains(text(),'약속쓰기')]"));
-        assertTrue(util.findElement(By.linkText("캘린더로 돌아가기")).isDisplayed());
+        assertTrue(util.isElementPresent(By.linkText("캘린더로 돌아가기")).isDisplayed());
 
         //제목 입력
-        util.findElement(By.id("tx0_0")).sendKeys(module.contents);
+        util.isElementPresent(By.id("tx0_0")).sendKeys(module.contents);
 
         //공유캘린더 선택
-        util.findElement(By.id("calendar_selectbox")).click();
+        util.isElementPresent(By.id("calendar_selectbox")).click();
         util.waitForIsElementPresent(By.xpath("//li[contains(text(),'공유캘린더')]")).click();
 
         //공개 - 비공개 설정
-        util.findElement(By.id("public_private")).click();
+        util.isElementPresent(By.id("public_private")).click();
 
         //시작 날짜 입력
-        util.findElement(By.id("start_date")).clear();
-        util.findElement(By.id("start_date")).sendKeys(module.StartDate);
+        util.isElementPresent(By.id("start_date")).clear();
+        util.isElementPresent(By.id("start_date")).sendKeys(module.StartDate);
 
         util.clickAndWait(By.xpath("//button[@class ='btn_sys pos_save']"));
 
@@ -584,7 +584,7 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
 
         //참가자 보기 클릭
         if(util.isElementPresentNotExist(By.xpath("//a[@class='btn_sy _view_attendee']"))) {
-            util.findElement(By.xpath("//a[@class='btn_sy _view_attendee']")).click();
+            util.isElementPresent(By.xpath("//a[@class='btn_sy _view_attendee']")).click();
             //해당하는 참가자 있는지 확인
             if (util.waitForIsElementPresent(By.xpath("//span[@class='txt_member ellipsis' and contains(text(),'" + module.Attendee + "')]")).isDisplayed()) {
                 util.printLog("해당하는 날짜의 약속에 참가자:" + module.Attendee + " 가 있습니다.");
@@ -602,18 +602,18 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
     public void TC_16_일정_일정쓰기_공개일정_Test() throws Exception {
 
         util.clickAndWait(By.xpath("//span[contains(text(),'약속쓰기')]"));
-        assertTrue(util.findElement(By.linkText("캘린더로 돌아가기")).isDisplayed());
+        assertTrue(util.isElementPresent(By.linkText("캘린더로 돌아가기")).isDisplayed());
 
         //제목 입력
-        util.findElement(By.id("tx0_0")).sendKeys(module.contents);
+        util.isElementPresent(By.id("tx0_0")).sendKeys(module.contents);
 
         //공유캘린더 선택
-        util.findElement(By.id("calendar_selectbox")).click();
+        util.isElementPresent(By.id("calendar_selectbox")).click();
         util.waitForIsElementPresent(By.xpath("//li[contains(text(),'공개캘린더')]")).click();
 
         //시작 날짜 입력
-        util.findElement(By.id("start_date")).clear();
-        util.findElement(By.id("start_date")).sendKeys(module.StartDate);
+        util.isElementPresent(By.id("start_date")).clear();
+        util.isElementPresent(By.id("start_date")).sendKeys(module.StartDate);
 
         util.clickAndWait(By.xpath("//button[@class ='btn_sys pos_save']"));
         util.waitForIsElementPresent(By.xpath("//button[contains(@class,'_go_task type_schedule todo')]"));
@@ -635,7 +635,7 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
 
         //참가자 보기 클릭
         if(util.isElementPresentNotExist(By.xpath("//a[@class='btn_sy _view_attendee']"))) {
-            util.findElement(By.xpath("//a[@class='btn_sy _view_attendee']")).click();
+            util.isElementPresent(By.xpath("//a[@class='btn_sy _view_attendee']")).click();
             //해당하는 참가자 있는지 확인
             if (util.waitForIsElementPresent(By.xpath("//span[@class='txt_member ellipsis' and contains(text(),'" + module.Attendee + "')]")).isDisplayed()) {
                 util.printLog("해당하는 날짜의 약속에 참가자:" + module.Attendee + " 가 있습니다.");
@@ -653,10 +653,10 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
     public void TC_18_일정_일정쓰기_스티커일정_Test() throws Exception {
 
         util.clickAndWait(By.xpath("//span[contains(text(),'약속쓰기')]"));
-        assertTrue(util.findElement(By.linkText("캘린더로 돌아가기")).isDisplayed());
+        assertTrue(util.isElementPresent(By.linkText("캘린더로 돌아가기")).isDisplayed());
 
         //제목 입력
-        util.findElement(By.id("tx0_0")).sendKeys(module.contents);
+        util.isElementPresent(By.id("tx0_0")).sendKeys(module.contents);
 
         //큰스티커 확인
         util.clickAndWait(By.className("h_cont"));
@@ -667,8 +667,8 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
         module.StickerSelect(util, module,2);
 
         //시작 날짜 입력
-        util.findElement(By.id("start_date")).clear();
-        util.findElement(By.id("start_date")).sendKeys(module.StartDate);
+        util.isElementPresent(By.id("start_date")).clear();
+        util.isElementPresent(By.id("start_date")).sendKeys(module.StartDate);
 
         util.clickAndWait(By.xpath("//button[@class ='btn_sys pos_save']"));
         util.waitForIsElementPresent(By.xpath("//button[contains(@class,'_go_task type_schedule todo')]"));
@@ -683,17 +683,17 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
     public void TC_20_일정_일정쓰기_범주일정_Test() throws Exception {
 
         util.clickAndWait(By.xpath("//span[contains(text(),'약속쓰기')]"));
-        assertTrue(util.findElement(By.linkText("캘린더로 돌아가기")).isDisplayed());
+        assertTrue(util.isElementPresent(By.linkText("캘린더로 돌아가기")).isDisplayed());
 
         //제목 입력
-        util.findElement(By.id("tx0_0")).sendKeys(module.contents);
+        util.isElementPresent(By.id("tx0_0")).sendKeys(module.contents);
 
         //범주 클릭
         module.eventColor(util);
 
         //시작 날짜 입력
-        util.findElement(By.id("start_date")).clear();
-        util.findElement(By.id("start_date")).sendKeys(module.StartDate);
+        util.isElementPresent(By.id("start_date")).clear();
+        util.isElementPresent(By.id("start_date")).sendKeys(module.StartDate);
 
         util.clickAndWait(By.xpath("//button[@class ='btn_sys pos_save']"));
         util.waitForIsElementPresent(By.xpath("//button[contains(@class,'_go_task type_schedule todo')]"));
@@ -708,10 +708,10 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
     public void TC_21_일정_일정쓰기_첨부일정_Test() throws Exception {
 
         util.clickAndWait(By.xpath("//span[contains(text(),'약속쓰기')]"));
-        assertTrue(util.findElement(By.linkText("캘린더로 돌아가기")).isDisplayed());
+        assertTrue(util.isElementPresent(By.linkText("캘린더로 돌아가기")).isDisplayed());
 
         //제목 입력
-        util.findElement(By.id("tx0_0")).sendKeys(module.contents);
+        util.isElementPresent(By.id("tx0_0")).sendKeys(module.contents);
 
         //이미지 업로드 클릭
         //util.clickAndWait(By.xpath("//input[@class='_input_file input_file']"));
@@ -719,8 +719,8 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
         module.uploadFile(util);
 
         //시작 날짜 입력
-        util.findElement(By.id("start_date")).clear();
-        util.findElement(By.id("start_date")).sendKeys(module.StartDate);
+        util.isElementPresent(By.id("start_date")).clear();
+        util.isElementPresent(By.id("start_date")).sendKeys(module.StartDate);
 
         util.clickAndWait(By.xpath("//button[@class ='btn_sys pos_save']"));
         util.waitForIsElementPresent(By.xpath("//button[contains(@class,'_go_task type_schedule todo')]"));
@@ -742,7 +742,7 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
 
         //참가자 보기 클릭
         if(util.isElementPresentNotExist(By.xpath("//a[@class='btn_sy _view_attendee']"))) {
-            util.findElement(By.xpath("//a[@class='btn_sy _view_attendee']")).click();
+            util.isElementPresent(By.xpath("//a[@class='btn_sy _view_attendee']")).click();
             //해당하는 참가자 있는지 확인
             if (util.waitForIsElementPresent(By.xpath("//span[@class='txt_member ellipsis' and contains(text(),'" + module.Attendee + "')]")).isDisplayed()) {
                 util.printLog("해당하는 날짜의 약속에 참가자:" + module.Attendee + " 가 있습니다.");
@@ -761,18 +761,18 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
     public void TC_16_일정_일정쓰기_기본일정_Test() throws Exception {
 
         util.clickAndWait(By.xpath("//span[contains(text(),'약속쓰기')]"));
-        assertTrue(util.findElement(By.linkText("캘린더로 돌아가기")).isDisplayed());
+        assertTrue(util.isElementPresent(By.linkText("캘린더로 돌아가기")).isDisplayed());
 
         //제목 입력
-        util.findElement(By.id("tx0_0")).sendKeys(module.contents);
+        util.isElementPresent(By.id("tx0_0")).sendKeys(module.contents);
 
         //공유캘린더 선택
-        util.findElement(By.id("calendar_selectbox")).click();
+        util.isElementPresent(By.id("calendar_selectbox")).click();
         util.waitForIsElementPresent(By.xpath("//li[contains(text(),'공유캘린더')]")).click();
 
         //시작 날짜 입력
-        util.findElement(By.id("start_date")).clear();
-        util.findElement(By.id("start_date")).sendKeys(module.StartDate);
+        util.isElementPresent(By.id("start_date")).clear();
+        util.isElementPresent(By.id("start_date")).sendKeys(module.StartDate);
 
         util.clickAndWait(By.xpath("//button[@class ='btn_sys pos_save']"));
 
@@ -803,7 +803,7 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
         //NumOfEvent = 해당 일자에 일정의 개수
         if(util.isElementPresentNotExist(By.xpath("//a[contains(@key,'"+dayIndex+"')][contains(@class,'_more_schedule')]")))
         {
-            util.findElement(By.xpath("//a[contains(@key,'"+dayIndex+"')][contains(@class,'_more_schedule')]")).click();
+            util.isElementPresent(By.xpath("//a[contains(@key,'"+dayIndex+"')][contains(@class,'_more_schedule')]")).click();
             NumOfEvent = util.waitAndGetXpathCount(By.xpath("html/body/div[5]/div/ul/li"));
             //System.out.println(NumOfEvent);
 
@@ -857,7 +857,7 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
         //NumOfEvent = 해당 일자에 일정의 개수
         if(util.isElementPresentNotExist(By.xpath("//a[contains(@key,'"+dayIndex+"')][contains(@class,'_more_schedule')]")))
         {
-            util.findElement(By.xpath("//a[contains(@key,'"+dayIndex+"')][contains(@class,'_more_schedule')]")).click();
+            util.isElementPresent(By.xpath("//a[contains(@key,'"+dayIndex+"')][contains(@class,'_more_schedule')]")).click();
             NumOfEvent = util.waitAndGetXpathCount(By.xpath("html/body/div[5]/div/ul/li"));
             //System.out.println(NumOfEvent);
 
@@ -910,7 +910,7 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
         //NumOfEvent = 해당 일자에 일정의 개수
         if(util.isElementPresentNotExist(By.xpath("//a[contains(@key,'"+dayIndex+"')][contains(@class,'_more_schedule')]")))
         {
-            util.findElement(By.xpath("//a[contains(@key,'"+dayIndex+"')][contains(@class,'_more_schedule')]")).click();
+            util.isElementPresent(By.xpath("//a[contains(@key,'"+dayIndex+"')][contains(@class,'_more_schedule')]")).click();
             NumOfEvent = util.waitAndGetXpathCount(By.xpath("html/body/div[5]/div/ul/li"));
             System.out.println(NumOfEvent);
 
@@ -1014,7 +1014,7 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
 
             */
 
-            util.findElement(By.xpath("//a[contains(@key,'"+dayIndex+"')][contains(@class,'_more_schedule')]")).click();
+            util.isElementPresent(By.xpath("//a[contains(@key,'"+dayIndex+"')][contains(@class,'_more_schedule')]")).click();
             NumOfEvent = util.waitAndGetXpathCount(By.xpath("html/body/div[5]/div/ul/li"));
             System.out.println(NumOfEvent);
 
@@ -1025,7 +1025,7 @@ public class suite_01_일정_일정쓰기_Test extends Testcase {
             {
                 ///html/body/div[5]/div/ul/li[1]
                 //*[@id="month_frame"]/div/div/div[1]/div[4]/table[2]/tbody/tr[2]/td[5]/div/div/a
-                //Subject = util.findElement(By.xpath("//*[@id='month_frame']/div/div/div[1]/div["+divValue+"]/table[2]/tbody/tr["+i+"]/td["+ tdValue +"]/div/div/a")).getText();
+                //Subject = util.isElementPresent(By.xpath("//*[@id='month_frame']/div/div/div[1]/div["+divValue+"]/table[2]/tbody/tr["+i+"]/td["+ tdValue +"]/div/div/a")).getText();
                 System.out.println(module.contents);
                 Subject = util.waitForIsElementPresent(By.xpath("html/body/div[5]/div/ul/li["+i+"]/a")).getText();
                 System.out.println(i+"번 일정의 제목은 : "+Subject);
