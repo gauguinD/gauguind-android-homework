@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript">
+      //<![CDATA[
+       $(function(){
+       var g="https://ajax.googleapis.com/ajax/services/feed/load?v=2.0&num=10&callback=?&q=";
+       $(#news_wrap h2 a").on("click",function(e){
+       e.preventDefault();
+       $("#news_wrap h2 a").removeClass("on");
+       $(this).addClass("on");
+
+       $.ajax({
+       url:g+$(this).attr("href"),
+       dataType:"json",
+       success:function(data){
+       $("#news_list").empty();
+       //console.log(data.responseData.feed.entries);
+
+       $each(data.responseData.feed.entries,function(i,d){
+
+       if(i==5) return false;
+       var title=d["title"];
+       var date=new Date(d["publishedDate"]);
+       var m=date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate();
+       var lk=d["link"];
+
+       $("#news_list").append('<li><a href="'+lk+'"target="_blank">'+title+'</a><span>'+m+'</span></li>');
+       });
+       }
+       });
+       });
+       $("#news_wrap h2 a").eq(0).click();
+       });
+        //]]>
+    </script>
+
+    <style type="text/css">
+        *{margin:0; padding:0;}
+        li{list-style:none;}
+        body{font:12px Margun Gothic,"맑은고딕",gulim,"굴림",sans-serif;
+        color:#333; padding-top:20px;}
+        h1,h2,h3,h4,h5,h6{font-size:100%; font-weight:normal;}
+        a{color:#333; text-decoration:none; outline:none;}
+        h1{font-size:2em; text-align:center; margin-bottom:10px; color:#c00;}
+
+        #news_wrap{width:380px;margin:0 auto;
+        background:#FFF url("images/rss_bg.gif") 0 0 repeat-x;}
+        #news_wrap li{height:25px;line-height:25px;position:relative;}
+        #news_wrap span{position:absolute;top:0;right:3px;}
+        #news_wrap li a{display:block;width:210px;
+        white-space:nowrap;overflow:hidden;
+        text-overflow:ellipsis;padding-left:15px;
+        background:url("images/bullet.gif") 5px 10px no-repeat;
+        }
+
+        #news_wrap h2{float;left;padding-right:3px;
+        margin-bottom:10px;}
+        #news_list{clear:both;}
+
+        #news_wrap h2 a{
+        display:inline-block;padding:8px 10px;
+        border:1px solid #aaa;
+        border-bottom:none;
+        border-radius:5px 5px 0 0; background:#ccc;
+        }
+
+        #news_wrap h2 a.on{background-color:#fff;font-weight:bold;}
+    </style>
+   </head>
+
+<body>
+<h1>고조선닷컴</h1>
+<div id="news_wrap">
+    <h2>
+        <a href="http://myhome.chosun.com/rss/www_section_rss.xml" class="on">
+            오늘의 주요 뉴스</a>
+    </h2>
+    <h2>
+        <a href="http://www.chosun.com/site/data/rss/ent.xml">
+            엔터테인먼트</a>
+    </h2>
+    <h2>
+        <a href="http://newsplus.chosun.com/hitdata/xml/se/sports/index.xml">
+            스포츠</a>
+    </h2>
+    <ul id="news_list"></ul>
+</div>
+</body>
+</html>

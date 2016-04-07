@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript">
+        //<![CDATA[
+        $(function(){
+        var num=0;
+        $("button").one("click",function(){
+        num++;
+        $("p").text(num);
+        });
+        });
+        //]]>
+    </script>
+
+<style type="text/css">
+</style>
+</head>
+<body>
+<button>증가 버튼</button>
+<p>0</p>
+</body>
+</html>

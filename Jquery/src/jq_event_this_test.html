@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript">
+        //<![CDATA[
+        $(function(){
+        $("#menu a").mouseover(function(){
+        $("#menu a").css("background","none");
+
+        $(this).css("backgroud","yellow");
+
+        var num=$("#menu a").index(this);
+        $(".txt").text(num);
+        });
+        });
+        //]]>
+    </script>
+
+<style type="text/css">
+</style>
+</head>
+<body>
+<button id="btn">마우스 오버</button>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript">
+        //<![CDATA[
+        $(function(){
+        $("#user_name").focus();
+
+        $("#user_id").focus(function(){
+        $(this).val("");
+        });
+
+        $("#user_id").blur(function(){
+        $(this).val("아이디 입력");
+        });
+        });
+
+        //]]>
+    </script>
+
+   </head>
+<body>
+<p>
+        <input type="text" name="user_name" id="user_name"/>
+</p>
+<p>
+    <input type="text" name="user_id" id="user_id" value="아이디 입력" />
+</p>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script>
+        //<![CDATA[
+        $(function(){
+        $(#menu li:contains('context3')").css("border","1px dashed red");
+        $(#menu li:has('strong')").css("border","2px solid blue");
+        $(#menu li").not(":first").css("background-color","yellow");
+        $(#menu li:eq(1)").find("strong").css("font-size","22px");
+        $(#menu").closest("div").css("border","5px double green");
+        //]]>
+    </script>
+
+<body>
+<h1>탐색선택자</h1>
+<div id="wrap">
+    <div id="inner_wrap">
+        <li id="menu">
+            <li>context1</li>
+            <li>
+            <span>context<strong>2</strong></span>
+            </li>
+            <li><a href="#">context3</a></li>
+        <li>context4</li>
+        <li>context5</li>
+        </ul>
+    </div>
+</div>
+</p>
+</body>
+</html>

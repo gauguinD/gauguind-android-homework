@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript">
+        //<![CDATA[
+        $(function(){
+        $("h1").delegate("a","mouseover focus",function(){
+        $(this).css("background-color","yellow");
+        });
+        $("h1").html("<a href='#'>내용</a>");
+        });
+        //]]>
+    </script>
+
+<style type="text/css">
+</style>
+</head>
+<body>
+<h1><a href="#">내</a> </h1>
+</body>
+</html>

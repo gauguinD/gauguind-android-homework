@@ -2,37 +2,37 @@
 <testng-results skipped="0" failed="5" total="12" passed="7">
   <reporter-output>
     <line>
-      <![CDATA[[Title] : ÀüÃ¼ : Áö½ÄiN<br>]]>
+      <![CDATA[[Title] : ï¿½ï¿½Ã¼ : ï¿½ï¿½ï¿½ï¿½iN<br>]]>
     </line>
     <line>
       <![CDATA[[URL] : http://qa.m.kin.naver.com/mobile/qna/questionList.nhn#%7B%22dirId%22%3A0%2C%22sortType%22%3A%22writeTime%22%7D<br>]]>
     </line>
     <line>
-      <![CDATA[[Title] : °ü½ÉÁö¿ª : Áö½ÄiN<br>]]>
+      <![CDATA[[Title] : ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : ï¿½ï¿½ï¿½ï¿½iN<br>]]>
     </line>
     <line>
       <![CDATA[[URL] : http://qa.m.kin.naver.com/mobile/qna/localQuestionList.nhn<br>]]>
     </line>
     <line>
-      <![CDATA[[Title] : °ü½ÉÅ°¿öµå : Áö½ÄiN<br>]]>
+      <![CDATA[[Title] : ï¿½ï¿½ï¿½ï¿½Å°ï¿½ï¿½ï¿½ï¿½ : ï¿½ï¿½ï¿½ï¿½iN<br>]]>
     </line>
     <line>
       <![CDATA[[URL] : http://qa.m.kin.naver.com/mobile/qna/keywordQuestionList.nhn#%7B%22keyword%22%3A%22%22%2C%22encodedTotalKeywords%22%3A%22%22%2C%22sortType%22%3A%22date%22%7D<br>]]>
     </line>
     <line>
-      <![CDATA[[Title] : °ü½ÉºÐ¾ß : Áö½ÄiN<br>]]>
+      <![CDATA[[Title] : ï¿½ï¿½ï¿½ÉºÐ¾ï¿½ : ï¿½ï¿½ï¿½ï¿½iN<br>]]>
     </line>
     <line>
       <![CDATA[[URL] : http://qa.m.kin.naver.com/mobile/qna/directoryQuestionList.nhn#%7B%22dirId%22%3A0%2C%22sortType%22%3A%22writeTime%22%7D<br>]]>
     </line>
     <line>
-      <![CDATA[[Title] : °ü½ÉºÐ¾ß : Áö½ÄiN<br>]]>
+      <![CDATA[[Title] : ï¿½ï¿½ï¿½ÉºÐ¾ï¿½ : ï¿½ï¿½ï¿½ï¿½iN<br>]]>
     </line>
     <line>
       <![CDATA[[URL] : http://qa.m.kin.naver.com/mobile/qna/userInterestDirs.nhn<br>]]>
     </line>
     <line>
-      <![CDATA[[Title] : °ü½ÉºÐ¾ß : Áö½ÄiN<br>]]>
+      <![CDATA[[Title] : ï¿½ï¿½ï¿½ÉºÐ¾ï¿½ : ï¿½ï¿½ï¿½ï¿½iN<br>]]>
     </line>
     <line>
       <![CDATA[[URL] : http://qa.m.kin.naver.com/mobile/qna/userInterestDirs.nhn<br>]]>
@@ -42,8 +42,8 @@
     <groups>
     </groups>
     <test name="galaxy_note2" duration-ms="166354" started-at="2014-08-13T12:56:36Z" finished-at="2014-08-13T12:59:23Z">
-      <class name="com.naver.main.kin.s03_»õÁú¹®.suite_01_»õÁú¹®_ÇÏÀ§¸Þ´º_Test">
-        <test-method status="PASS" signature="setupClass(java.lang.String)[pri:0, instance:com.naver.main.kin.s03_»õÁú¹®.suite_01_»õÁú¹®_ÇÏÀ§¸Þ´º_Test@327cee]" name="setupClass" is-config="true" duration-ms="19466" started-at="2014-08-13T21:56:36Z" finished-at="2014-08-13T21:56:56Z">
+      <class name="com.naver.main.kin.s03_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.suite_01_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½Þ´ï¿½_Test">
+        <test-method status="PASS" signature="setupClass(java.lang.String)[pri:0, instance:com.naver.main.kin.s03_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.suite_01_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½Þ´ï¿½_Test@327cee]" name="setupClass" is-config="true" duration-ms="19466" started-at="2014-08-13T21:56:36Z" finished-at="2014-08-13T21:56:56Z">
           <params>
             <param index="0">
               <value>
@@ -54,63 +54,63 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupClass -->
-        <test-method status="PASS" signature="TC_01_»õÁú¹®__°ü½ÉÅÇ_ÀüÃ¼_Test()[pri:0, instance:com.naver.main.kin.s03_»õÁú¹®.suite_01_»õÁú¹®_ÇÏÀ§¸Þ´º_Test@327cee]" name="TC_01_»õÁú¹®__°ü½ÉÅÇ_ÀüÃ¼_Test" duration-ms="7155" started-at="2014-08-13T21:56:56Z" finished-at="2014-08-13T21:57:03Z">
+        <test-method status="PASS" signature="TC_01_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½__ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½Ã¼_Test()[pri:0, instance:com.naver.main.kin.s03_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.suite_01_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½Þ´ï¿½_Test@327cee]" name="TC_01_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½__ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½Ã¼_Test" duration-ms="7155" started-at="2014-08-13T21:56:56Z" finished-at="2014-08-13T21:57:03Z">
           <reporter-output>
             <line>
-              <![CDATA[[Title] : ÀüÃ¼ : Áö½ÄiN<br>]]>
+              <![CDATA[[Title] : ï¿½ï¿½Ã¼ : ï¿½ï¿½ï¿½ï¿½iN<br>]]>
             </line>
             <line>
               <![CDATA[[URL] : http://qa.m.kin.naver.com/mobile/qna/questionList.nhn#%7B%22dirId%22%3A0%2C%22sortType%22%3A%22writeTime%22%7D<br>]]>
             </line>
           </reporter-output>
-        </test-method> <!-- TC_01_»õÁú¹®__°ü½ÉÅÇ_ÀüÃ¼_Test -->
-        <test-method status="PASS" signature="TC_02_»õÁú¹®_°ü½ÉÅÇ_°ü½ÉÁö¿ª_Test()[pri:0, instance:com.naver.main.kin.s03_»õÁú¹®.suite_01_»õÁú¹®_ÇÏÀ§¸Þ´º_Test@327cee]" name="TC_02_»õÁú¹®_°ü½ÉÅÇ_°ü½ÉÁö¿ª_Test" duration-ms="2933" started-at="2014-08-13T21:57:03Z" finished-at="2014-08-13T21:57:06Z">
+        </test-method> <!-- TC_01_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½__ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½Ã¼_Test -->
+        <test-method status="PASS" signature="TC_02_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_Test()[pri:0, instance:com.naver.main.kin.s03_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.suite_01_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½Þ´ï¿½_Test@327cee]" name="TC_02_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_Test" duration-ms="2933" started-at="2014-08-13T21:57:03Z" finished-at="2014-08-13T21:57:06Z">
           <reporter-output>
             <line>
-              <![CDATA[[Title] : °ü½ÉÁö¿ª : Áö½ÄiN<br>]]>
+              <![CDATA[[Title] : ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : ï¿½ï¿½ï¿½ï¿½iN<br>]]>
             </line>
             <line>
               <![CDATA[[URL] : http://qa.m.kin.naver.com/mobile/qna/localQuestionList.nhn<br>]]>
             </line>
           </reporter-output>
-        </test-method> <!-- TC_02_»õÁú¹®_°ü½ÉÅÇ_°ü½ÉÁö¿ª_Test -->
-        <test-method status="PASS" signature="TC_03_»õÁú¹®_°ü½ÉÅÇ_°ü½ÉÅ°¿öµå_Test()[pri:0, instance:com.naver.main.kin.s03_»õÁú¹®.suite_01_»õÁú¹®_ÇÏÀ§¸Þ´º_Test@327cee]" name="TC_03_»õÁú¹®_°ü½ÉÅÇ_°ü½ÉÅ°¿öµå_Test" duration-ms="2977" started-at="2014-08-13T21:57:06Z" finished-at="2014-08-13T21:57:09Z">
+        </test-method> <!-- TC_02_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_Test -->
+        <test-method status="PASS" signature="TC_03_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½Å°ï¿½ï¿½ï¿½ï¿½_Test()[pri:0, instance:com.naver.main.kin.s03_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.suite_01_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½Þ´ï¿½_Test@327cee]" name="TC_03_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½Å°ï¿½ï¿½ï¿½ï¿½_Test" duration-ms="2977" started-at="2014-08-13T21:57:06Z" finished-at="2014-08-13T21:57:09Z">
           <reporter-output>
             <line>
-              <![CDATA[[Title] : °ü½ÉÅ°¿öµå : Áö½ÄiN<br>]]>
+              <![CDATA[[Title] : ï¿½ï¿½ï¿½ï¿½Å°ï¿½ï¿½ï¿½ï¿½ : ï¿½ï¿½ï¿½ï¿½iN<br>]]>
             </line>
             <line>
               <![CDATA[[URL] : http://qa.m.kin.naver.com/mobile/qna/keywordQuestionList.nhn#%7B%22keyword%22%3A%22%22%2C%22encodedTotalKeywords%22%3A%22%22%2C%22sortType%22%3A%22date%22%7D<br>]]>
             </line>
           </reporter-output>
-        </test-method> <!-- TC_03_»õÁú¹®_°ü½ÉÅÇ_°ü½ÉÅ°¿öµå_Test -->
-        <test-method status="PASS" signature="TC_04_»õÁú¹®_°ü½ÉÅÇ_ÀüÃ¼_Test()[pri:0, instance:com.naver.main.kin.s03_»õÁú¹®.suite_01_»õÁú¹®_ÇÏÀ§¸Þ´º_Test@327cee]" name="TC_04_»õÁú¹®_°ü½ÉÅÇ_ÀüÃ¼_Test" duration-ms="2977" started-at="2014-08-13T21:57:09Z" finished-at="2014-08-13T21:57:12Z">
+        </test-method> <!-- TC_03_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½Å°ï¿½ï¿½ï¿½ï¿½_Test -->
+        <test-method status="PASS" signature="TC_04_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½Ã¼_Test()[pri:0, instance:com.naver.main.kin.s03_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.suite_01_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½Þ´ï¿½_Test@327cee]" name="TC_04_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½Ã¼_Test" duration-ms="2977" started-at="2014-08-13T21:57:09Z" finished-at="2014-08-13T21:57:12Z">
           <reporter-output>
             <line>
-              <![CDATA[[Title] : °ü½ÉºÐ¾ß : Áö½ÄiN<br>]]>
+              <![CDATA[[Title] : ï¿½ï¿½ï¿½ÉºÐ¾ï¿½ : ï¿½ï¿½ï¿½ï¿½iN<br>]]>
             </line>
             <line>
               <![CDATA[[URL] : http://qa.m.kin.naver.com/mobile/qna/directoryQuestionList.nhn#%7B%22dirId%22%3A0%2C%22sortType%22%3A%22writeTime%22%7D<br>]]>
             </line>
           </reporter-output>
-        </test-method> <!-- TC_04_»õÁú¹®_°ü½ÉÅÇ_ÀüÃ¼_Test -->
-        <test-method status="FAIL" signature="TC_05_»õÁú¹®_°ü½ÉºÐ¾ß_ÀüÃ¼_Test()[pri:0, instance:com.naver.main.kin.s03_»õÁú¹®.suite_01_»õÁú¹®_ÇÏÀ§¸Þ´º_Test@327cee]" name="TC_05_»õÁú¹®_°ü½ÉºÐ¾ß_ÀüÃ¼_Test" duration-ms="31493" started-at="2014-08-13T21:57:12Z" finished-at="2014-08-13T21:57:43Z">
+        </test-method> <!-- TC_04_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½Ã¼_Test -->
+        <test-method status="FAIL" signature="TC_05_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ÉºÐ¾ï¿½_ï¿½ï¿½Ã¼_Test()[pri:0, instance:com.naver.main.kin.s03_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.suite_01_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½Þ´ï¿½_Test@327cee]" name="TC_05_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ÉºÐ¾ï¿½_ï¿½ï¿½Ã¼_Test" duration-ms="31493" started-at="2014-08-13T21:57:12Z" finished-at="2014-08-13T21:57:43Z">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Timed out after 30 seconds waiting for presence of element located by: By.linkText: °æÁ¦
+              <![CDATA[Timed out after 30 seconds waiting for presence of element located by: By.linkText: ï¿½ï¿½ï¿½ï¿½
 Build info: version: '2.32.0', revision: '6c40c18', time: '2013-04-09 17:23:04'
 System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_45'
 Driver info: driver.version: unknown]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for presence of element located by: By.linkText: °æÁ¦
+              <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for presence of element located by: By.linkText: ï¿½ï¿½ï¿½ï¿½
 Build info: version: '2.32.0', revision: '6c40c18', time: '2013-04-09 17:23:04'
 System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_45'
 Driver info: driver.version: unknown
 	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:259)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.naver.main.Utilities.waitForIsSelected(Utilities.java:633)
-	at com.naver.main.kin.s03_»õÁú¹®.suite_01_»õÁú¹®_ÇÏÀ§¸Þ´º_Test.TC_05_»õÁú¹®_°ü½ÉºÐ¾ß_ÀüÃ¼_Test(suite_01_»õÁú¹®_ÇÏÀ§¸Þ´º_Test.java:171)
+	at Utilities.waitForIsSelected(Utilities.java:633)
+	at com.naver.main.kin.s03_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.suite_01_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½Þ´ï¿½_Test.TC_05_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ÉºÐ¾ï¿½_ï¿½ï¿½Ã¼_Test(suite_01_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½Þ´ï¿½_Test.java:171)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -131,7 +131,7 @@ Driver info: driver.version: unknown
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:744)
-Caused by: org.openqa.selenium.NoSuchElementException: Could not find element with linkText: °æÁ¦
+Caused by: org.openqa.selenium.NoSuchElementException: Could not find element with linkText: ï¿½ï¿½ï¿½ï¿½
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
 System info: os.name: 'Linux', os.arch: 'armv7l', os.version: '3.0.31-2029580', java.version: '0'
@@ -141,7 +141,7 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '2.32.0', revision: '6c40c18', time: '2013-04-09 17:23:04'
 System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_45'
 Session ID: 1407927042902
-Driver info: com.naver.main.Utilities
+Driver info: Utilities
 Capabilities [{platform=ANDROID, acceptSslCerts=true, javascriptEnabled=true, handlesAlerts=true, browserName=android, browserConnectionEnabled=true, webStorageEnabled=true, rotatable=true, locationContextEnabled=true, applicationCacheEnabled=true, webdriver.remote.sessionid=1407927042902, takesScreenshot=true, version=19}]
 	at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -159,7 +159,7 @@ Capabilities [{platform=ANDROID, acceptSslCerts=true, javascriptEnabled=true, ha
 	at org.openqa.selenium.support.ui.ExpectedConditions$3.apply(ExpectedConditions.java:1)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
 	... 22 more
-Caused by: org.openqa.selenium.NoSuchElementException: Could not find element with linkText: °æÁ¦
+Caused by: org.openqa.selenium.NoSuchElementException: Could not find element with linkText: ï¿½ï¿½ï¿½ï¿½
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
 System info: os.name: 'Linux', os.arch: 'armv7l', os.version: '3.0.31-2029580', java.version: '0'
@@ -192,42 +192,42 @@ Driver info: driver.version: EventFiringWebDriver
           </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_05_»õÁú¹®_°ü½ÉºÐ¾ß_ÀüÃ¼_Test -->
-        <test-method status="PASS" signature="TC_06_»õÁú¹®_°ü½ÉºÐ¾ß_¼³Á¤_Test()[pri:0, instance:com.naver.main.kin.s03_»õÁú¹®.suite_01_»õÁú¹®_ÇÏÀ§¸Þ´º_Test@327cee]" name="TC_06_»õÁú¹®_°ü½ÉºÐ¾ß_¼³Á¤_Test" duration-ms="4160" started-at="2014-08-13T21:57:43Z" finished-at="2014-08-13T21:57:48Z">
+        </test-method> <!-- TC_05_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ÉºÐ¾ï¿½_ï¿½ï¿½Ã¼_Test -->
+        <test-method status="PASS" signature="TC_06_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ÉºÐ¾ï¿½_ï¿½ï¿½ï¿½ï¿½_Test()[pri:0, instance:com.naver.main.kin.s03_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.suite_01_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½Þ´ï¿½_Test@327cee]" name="TC_06_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ÉºÐ¾ï¿½_ï¿½ï¿½ï¿½ï¿½_Test" duration-ms="4160" started-at="2014-08-13T21:57:43Z" finished-at="2014-08-13T21:57:48Z">
           <reporter-output>
             <line>
-              <![CDATA[[Title] : °ü½ÉºÐ¾ß : Áö½ÄiN<br>]]>
+              <![CDATA[[Title] : ï¿½ï¿½ï¿½ÉºÐ¾ï¿½ : ï¿½ï¿½ï¿½ï¿½iN<br>]]>
             </line>
             <line>
               <![CDATA[[URL] : http://qa.m.kin.naver.com/mobile/qna/userInterestDirs.nhn<br>]]>
             </line>
           </reporter-output>
-        </test-method> <!-- TC_06_»õÁú¹®_°ü½ÉºÐ¾ß_¼³Á¤_Test -->
-        <test-method status="PASS" signature="TC_06_»õÁú¹®_ÀüÃ¼_ÆîÄ¡±â_Test()[pri:0, instance:com.naver.main.kin.s03_»õÁú¹®.suite_01_»õÁú¹®_ÇÏÀ§¸Þ´º_Test@327cee]" name="TC_06_»õÁú¹®_ÀüÃ¼_ÆîÄ¡±â_Test" duration-ms="1" started-at="2014-08-13T21:57:48Z" finished-at="2014-08-13T21:57:48Z">
+        </test-method> <!-- TC_06_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ÉºÐ¾ï¿½_ï¿½ï¿½ï¿½ï¿½_Test -->
+        <test-method status="PASS" signature="TC_06_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½Ã¼_ï¿½ï¿½Ä¡ï¿½ï¿½_Test()[pri:0, instance:com.naver.main.kin.s03_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.suite_01_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½Þ´ï¿½_Test@327cee]" name="TC_06_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½Ã¼_ï¿½ï¿½Ä¡ï¿½ï¿½_Test" duration-ms="1" started-at="2014-08-13T21:57:48Z" finished-at="2014-08-13T21:57:48Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_06_»õÁú¹®_ÀüÃ¼_ÆîÄ¡±â_Test -->
-        <test-method status="PASS" signature="TC_07_³»¼Ò½Ä_TOP()[pri:0, instance:com.naver.main.kin.s03_»õÁú¹®.suite_01_»õÁú¹®_ÇÏÀ§¸Þ´º_Test@327cee]" name="TC_07_³»¼Ò½Ä_TOP" duration-ms="0" started-at="2014-08-13T21:57:48Z" finished-at="2014-08-13T21:57:48Z">
+        </test-method> <!-- TC_06_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½Ã¼_ï¿½ï¿½Ä¡ï¿½ï¿½_Test -->
+        <test-method status="PASS" signature="TC_07_ï¿½ï¿½ï¿½Ò½ï¿½_TOP()[pri:0, instance:com.naver.main.kin.s03_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.suite_01_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½Þ´ï¿½_Test@327cee]" name="TC_07_ï¿½ï¿½ï¿½Ò½ï¿½_TOP" duration-ms="0" started-at="2014-08-13T21:57:48Z" finished-at="2014-08-13T21:57:48Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_07_³»¼Ò½Ä_TOP -->
-        <test-method status="FAIL" signature="TC_07_»õÁú¹®_°ü½ÉÅ°¿öµå_ÀüÃ¼_Test()[pri:0, instance:com.naver.main.kin.s03_»õÁú¹®.suite_01_»õÁú¹®_ÇÏÀ§¸Þ´º_Test@327cee]" name="TC_07_»õÁú¹®_°ü½ÉÅ°¿öµå_ÀüÃ¼_Test" duration-ms="31100" started-at="2014-08-13T21:57:48Z" finished-at="2014-08-13T21:58:19Z">
+        </test-method> <!-- TC_07_ï¿½ï¿½ï¿½Ò½ï¿½_TOP -->
+        <test-method status="FAIL" signature="TC_07_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½Å°ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½Ã¼_Test()[pri:0, instance:com.naver.main.kin.s03_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.suite_01_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½Þ´ï¿½_Test@327cee]" name="TC_07_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½Å°ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½Ã¼_Test" duration-ms="31100" started-at="2014-08-13T21:57:48Z" finished-at="2014-08-13T21:58:19Z">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Timed out after 30 seconds waiting for presence of element located by: By.linkText: ¾ÆÀÌÆù
+              <![CDATA[Timed out after 30 seconds waiting for presence of element located by: By.linkText: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 Build info: version: '2.32.0', revision: '6c40c18', time: '2013-04-09 17:23:04'
 System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_45'
 Driver info: driver.version: unknown]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for presence of element located by: By.linkText: ¾ÆÀÌÆù
+              <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for presence of element located by: By.linkText: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 Build info: version: '2.32.0', revision: '6c40c18', time: '2013-04-09 17:23:04'
 System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_45'
 Driver info: driver.version: unknown
 	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:259)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.naver.main.Utilities.waitForIsSelected(Utilities.java:633)
-	at com.naver.main.kin.s03_»õÁú¹®.suite_01_»õÁú¹®_ÇÏÀ§¸Þ´º_Test.TC_07_»õÁú¹®_°ü½ÉÅ°¿öµå_ÀüÃ¼_Test(suite_01_»õÁú¹®_ÇÏÀ§¸Þ´º_Test.java:210)
+	at Utilities.waitForIsSelected(Utilities.java:633)
+	at com.naver.main.kin.s03_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.suite_01_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½Þ´ï¿½_Test.TC_07_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½Å°ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½Ã¼_Test(suite_01_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½Þ´ï¿½_Test.java:210)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -248,7 +248,7 @@ Driver info: driver.version: unknown
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
 	at java.lang.Thread.run(Thread.java:744)
-Caused by: org.openqa.selenium.NoSuchElementException: Could not find element with linkText: ¾ÆÀÌÆù
+Caused by: org.openqa.selenium.NoSuchElementException: Could not find element with linkText: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
 System info: os.name: 'Linux', os.arch: 'armv7l', os.version: '3.0.31-2029580', java.version: '0'
@@ -258,7 +258,7 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '2.32.0', revision: '6c40c18', time: '2013-04-09 17:23:04'
 System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_45'
 Session ID: 1407927042902
-Driver info: com.naver.main.Utilities
+Driver info: Utilities
 Capabilities [{platform=ANDROID, acceptSslCerts=true, javascriptEnabled=true, handlesAlerts=true, browserName=android, browserConnectionEnabled=true, webStorageEnabled=true, rotatable=true, locationContextEnabled=true, applicationCacheEnabled=true, webdriver.remote.sessionid=1407927042902, takesScreenshot=true, version=19}]
 	at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -276,7 +276,7 @@ Capabilities [{platform=ANDROID, acceptSslCerts=true, javascriptEnabled=true, ha
 	at org.openqa.selenium.support.ui.ExpectedConditions$3.apply(ExpectedConditions.java:1)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
 	... 22 more
-Caused by: org.openqa.selenium.NoSuchElementException: Could not find element with linkText: ¾ÆÀÌÆù
+Caused by: org.openqa.selenium.NoSuchElementException: Could not find element with linkText: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
 System info: os.name: 'Linux', os.arch: 'armv7l', os.version: '3.0.31-2029580', java.version: '0'
@@ -309,8 +309,8 @@ Driver info: driver.version: EventFiringWebDriver
           </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_07_»õÁú¹®_°ü½ÉÅ°¿öµå_ÀüÃ¼_Test -->
-        <test-method status="FAIL" signature="TC_08_»õÁú¹®_°ü½ÉÅ°¿öµå_¼³Á¤_Test()[pri:0, instance:com.naver.main.kin.s03_»õÁú¹®.suite_01_»õÁú¹®_ÇÏÀ§¸Þ´º_Test@327cee]" name="TC_08_»õÁú¹®_°ü½ÉÅ°¿öµå_¼³Á¤_Test" duration-ms="3124" started-at="2014-08-13T21:58:19Z" finished-at="2014-08-13T21:58:22Z">
+        </test-method> <!-- TC_07_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½Å°ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½Ã¼_Test -->
+        <test-method status="FAIL" signature="TC_08_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½Å°ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½_Test()[pri:0, instance:com.naver.main.kin.s03_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.suite_01_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½Þ´ï¿½_Test@327cee]" name="TC_08_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½Å°ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½_Test" duration-ms="3124" started-at="2014-08-13T21:58:19Z" finished-at="2014-08-13T21:58:22Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -321,7 +321,7 @@ Driver info: driver.version: EventFiringWebDriver
 	at org.testng.Assert.failNotEquals(Assert.java:494)
 	at org.testng.Assert.assertTrue(Assert.java:42)
 	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.naver.main.kin.s03_»õÁú¹®.suite_01_»õÁú¹®_ÇÏÀ§¸Þ´º_Test.TC_08_»õÁú¹®_°ü½ÉÅ°¿öµå_¼³Á¤_Test(suite_01_»õÁú¹®_ÇÏÀ§¸Þ´º_Test.java:231)
+	at com.naver.main.kin.s03_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.suite_01_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½Þ´ï¿½_Test.TC_08_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½Å°ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½_Test(suite_01_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½Þ´ï¿½_Test.java:231)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -347,14 +347,14 @@ Driver info: driver.version: EventFiringWebDriver
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[[Title] : °ü½ÉºÐ¾ß : Áö½ÄiN<br>]]>
+              <![CDATA[[Title] : ï¿½ï¿½ï¿½ÉºÐ¾ï¿½ : ï¿½ï¿½ï¿½ï¿½iN<br>]]>
             </line>
             <line>
               <![CDATA[[URL] : http://qa.m.kin.naver.com/mobile/qna/userInterestDirs.nhn<br>]]>
             </line>
           </reporter-output>
-        </test-method> <!-- TC_08_»õÁú¹®_°ü½ÉÅ°¿öµå_¼³Á¤_Test -->
-        <test-method status="FAIL" signature="TC_09_»õÁú¹®_°ü½ÉÁö¿ª_ÀüÃ¼_Test()[pri:0, instance:com.naver.main.kin.s03_»õÁú¹®.suite_01_»õÁú¹®_ÇÏÀ§¸Þ´º_Test@327cee]" name="TC_09_»õÁú¹®_°ü½ÉÁö¿ª_ÀüÃ¼_Test" duration-ms="30542" started-at="2014-08-13T21:58:22Z" finished-at="2014-08-13T21:58:52Z">
+        </test-method> <!-- TC_08_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½Å°ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½_Test -->
+        <test-method status="FAIL" signature="TC_09_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½Ã¼_Test()[pri:0, instance:com.naver.main.kin.s03_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.suite_01_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½Þ´ï¿½_Test@327cee]" name="TC_09_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½Ã¼_Test" duration-ms="30542" started-at="2014-08-13T21:58:22Z" finished-at="2014-08-13T21:58:52Z">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Timed out after 30 seconds waiting for presence of element located by: By.id: choose_directory_manual
@@ -369,9 +369,9 @@ System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.versi
 Driver info: driver.version: unknown
 	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:259)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.naver.main.Utilities.waitForIsElementPresent(Utilities.java:341)
-	at com.naver.main.Utilities.selectAndWait(Utilities.java:508)
-	at com.naver.main.kin.s03_»õÁú¹®.suite_01_»õÁú¹®_ÇÏÀ§¸Þ´º_Test.TC_09_»õÁú¹®_°ü½ÉÁö¿ª_ÀüÃ¼_Test(suite_01_»õÁú¹®_ÇÏÀ§¸Þ´º_Test.java:248)
+	at Utilities.waitForIsElementPresent(Utilities.java:341)
+	at Utilities.selectAndWait(Utilities.java:508)
+	at com.naver.main.kin.s03_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.suite_01_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½Þ´ï¿½_Test.TC_09_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½Ã¼_Test(suite_01_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½Þ´ï¿½_Test.java:248)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -402,7 +402,7 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '2.32.0', revision: '6c40c18', time: '2013-04-09 17:23:04'
 System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_45'
 Session ID: 1407927042902
-Driver info: com.naver.main.Utilities
+Driver info: Utilities
 Capabilities [{platform=ANDROID, acceptSslCerts=true, javascriptEnabled=true, handlesAlerts=true, browserName=android, browserConnectionEnabled=true, webStorageEnabled=true, rotatable=true, locationContextEnabled=true, applicationCacheEnabled=true, webdriver.remote.sessionid=1407927042902, takesScreenshot=true, version=19}]
 	at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -453,8 +453,8 @@ Driver info: driver.version: EventFiringWebDriver
           </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_09_»õÁú¹®_°ü½ÉÁö¿ª_ÀüÃ¼_Test -->
-        <test-method status="FAIL" signature="TC_10_»õÁú¹®_°ü½ÉÁö¿ª_¼³Á¤_Test()[pri:0, instance:com.naver.main.kin.s03_»õÁú¹®.suite_01_»õÁú¹®_ÇÏÀ§¸Þ´º_Test@327cee]" name="TC_10_»õÁú¹®_°ü½ÉÁö¿ª_¼³Á¤_Test" duration-ms="30400" started-at="2014-08-13T21:58:52Z" finished-at="2014-08-13T21:59:23Z">
+        </test-method> <!-- TC_09_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½Ã¼_Test -->
+        <test-method status="FAIL" signature="TC_10_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½_Test()[pri:0, instance:com.naver.main.kin.s03_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.suite_01_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½Þ´ï¿½_Test@327cee]" name="TC_10_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½_Test" duration-ms="30400" started-at="2014-08-13T21:58:52Z" finished-at="2014-08-13T21:59:23Z">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Timed out after 30 seconds waiting for element to be clickable: By.className: set
@@ -469,8 +469,8 @@ System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.versi
 Driver info: driver.version: unknown
 	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:259)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.naver.main.Utilities.clickAndWait(Utilities.java:448)
-	at com.naver.main.kin.s03_»õÁú¹®.suite_01_»õÁú¹®_ÇÏÀ§¸Þ´º_Test.TC_10_»õÁú¹®_°ü½ÉÁö¿ª_¼³Á¤_Test(suite_01_»õÁú¹®_ÇÏÀ§¸Þ´º_Test.java:263)
+	at Utilities.clickAndWait(Utilities.java:448)
+	at com.naver.main.kin.s03_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.suite_01_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½Þ´ï¿½_Test.TC_10_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½_Test(suite_01_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½Þ´ï¿½_Test.java:263)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -501,7 +501,7 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '2.32.0', revision: '6c40c18', time: '2013-04-09 17:23:04'
 System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_45'
 Session ID: 1407927042902
-Driver info: com.naver.main.Utilities
+Driver info: Utilities
 Capabilities [{platform=ANDROID, acceptSslCerts=true, javascriptEnabled=true, handlesAlerts=true, browserName=android, browserConnectionEnabled=true, webStorageEnabled=true, rotatable=true, locationContextEnabled=true, applicationCacheEnabled=true, webdriver.remote.sessionid=1407927042902, takesScreenshot=true, version=19}]
 	at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -554,8 +554,8 @@ Driver info: driver.version: EventFiringWebDriver
           </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_10_»õÁú¹®_°ü½ÉÁö¿ª_¼³Á¤_Test -->
-      </class> <!-- com.naver.main.kin.s03_»õÁú¹®.suite_01_»õÁú¹®_ÇÏÀ§¸Þ´º_Test -->
+        </test-method> <!-- TC_10_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½_Test -->
+      </class> <!-- com.naver.main.kin.s03_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.suite_01_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½Þ´ï¿½_Test -->
     </test> <!-- galaxy_note2 -->
   </suite> <!-- NaverMainMobileWeb Regression Test -->
 </testng-results>

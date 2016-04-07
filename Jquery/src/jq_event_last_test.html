@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript">
+        //<![CDATA[
+        $(function(){
+        var size=12;
+        var body=$("body");
+        $(".zoom button").on("click",function(){
+        var btn_index=$(".zoom button").index(this);
+
+        if(btn_index==0){
+        size++;
+        body.css("font-size",size+"px");
+        }else if(btn_index==2){
+        size--;
+        body.css("font-size",size+"px");
+        }else{
+        body.css("font-size","12px");
+        size=12;
+        }
+        });
+
+        $("#fs").on("change",function(){
+        body.css("font-family",$(this).val());
+        });
+        });
+        //]]>
+    </script>
+
+<style type="text/css">
+    body{font:12px dotum,"돋움",sans-serif;margin:20px;}
+    #f_wrap dtfont-weight:bold;margin-top:10px;}
+    #txt_wrapwidth:90%;margin-top:20px;}
+</style>
+</head>
+<body>
+<div id="f_wrap">
+    <dl>
+        <dt>글자크기</dt>
+        <dd class="zoom">
+            <button>+</button>
+            <button>0</button>
+            <button>-</button>
+        </dd>
+        <dt>글자모양</dt>
+        <dd class="f_style">
+            <select name="fs" id="fs">
+                <option value="dotum,'돋움',sans-serif">돋움</option>
+                <option value="gulim,'굴림',sans-serif">굴림</option>
+                <option value="magun gothic,'맑은고딕',sans-serif">맑은 고딕</option>
+                <option value="magun gothic,'맑은고딕',serif">궁서</option>
+            </select>
+        </dd>
+    </dl>
+</div>
+<p id="txt_wrap">키보드 접근성이란 마우스</p>
+</body>
+</html>

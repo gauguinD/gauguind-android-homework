@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript">
+        //<![CDATA[
+        $(window).scroll(function(){
+        $("#txt").text($(this).scrollTop());
+        });
+        //]]>
+    </script>
+
+<style type="text/css">
+    {bodyheight:3000px;}
+    #txt{position:fixed;top:10px;left:10px;}
+</style>
+</head>
+<body>
+</select>
+<p id="txt"></p>
+</body>
+</html>

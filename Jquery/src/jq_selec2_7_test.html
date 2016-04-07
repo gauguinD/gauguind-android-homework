@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script>
+        //<![CDATA[
+        $(function(){
+        //$("li:first-of-type").css("background-color","yellow");
+        $("a[title]").css("background-color","pink");
+        $("a[href^='mailto']").css("background-color","purple");
+        $("a[href='http://www.daum.com']").css("background-color","aqua");
+        $("a[href='http://www.google.com']").css("background-color","orange");
+        });
+        //]]>
+    </script>
+
+<body>
+<h1>인접관계선택자</h1>
+<ul>
+    <li>
+        <a href="http://www.naver.com" title="네이버이동">네이버</a>
+    </li>
+    <li><a href="mailto:ciycc@naver.com">To administrator</a></li>
+    <li><a href="http://www.nate.com">nate</a></li>
+    <li><a href="http://www.daum.com">daum</a></li>
+    <li><a href="http://www.google.com">google</a></li>
+</ul>
+</body>
+</html>

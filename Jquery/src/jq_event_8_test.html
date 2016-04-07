@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript">
+        //<![CDATA[
+        $(function(){
+        $("#user_id").keydown(function(e){
+        $(this).css("background-color","purple");
+
+        $("#txt1").text(e.keyCode);
+        });
+
+        $("#user_id").keypress(function(e){
+        $("#txt2").text(e.keyCode);
+        });
+
+        $("#user_id").keyup(function(e){
+        $(this).css("background-color","yellow");
+
+        $("#txt1").text(e.keyCode);
+        });
+
+        });
+
+
+
+        //]]>
+    </script>
+
+    <style type="text/css">
+        #user_id{ime-mode:disabled;}
+    </style>
+   </head>
+<body>
+<p>
+        <input type="text" name="user_name" id="user_id"/>
+</p>
+<p id="txt2"></p>
+<p id="txt1"></p>
+
+</body>
+</html>

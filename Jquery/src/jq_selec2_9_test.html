@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script>
+        //<![CDATA[
+        $(function(){
+        $(":text").css("border","1px dashed #f00");
+        $(":checked").attr("checked","false");
+        $(":selected").attr("selected","false");
+        });
+        //]]>
+    </script>
+
+<body>
+<h1>탐색선택자</h1>
+<p>
+    <label for="user_name">이름</label>
+    <input type="text" name="user_name" id="user_name"/>
+</p>
+<p>
+    <input type="checkbox" name="accept" id="accept" checked="checked"/>
+    <label for="accept">사용자동의</label>
+</p>
+<p>
+    <select name="rel_site" id="real_site">
+        <option value="naver">Naver</option>
+        <option value="nate" selected="selected">Nate</option>
+    </select>
+</p>
+</body>
+</html>

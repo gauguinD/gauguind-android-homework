@@ -12,7 +12,7 @@ System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.versi
 Driver info: driver.version: unknown
 	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:259)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.naver.main.Utilities.waitForIsSelected(Utilities.java:633)
+	at Utilities.waitForIsSelected(Utilities.java:633)
 	at com.naver.main.kin.s03_새질문.suite_01_새질문_하위메뉴_Test.TC_07_새질문_관심키워드_전체_Test(suite_01_새질문_하위메뉴_Test.java:210)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
@@ -44,7 +44,7 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '2.32.0', revision: '6c40c18', time: '2013-04-09 17:23:04'
 System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_45'
 Session ID: 1407927042902
-Driver info: com.naver.main.Utilities
+Driver info: Utilities
 Capabilities [{platform=ANDROID, acceptSslCerts=true, javascriptEnabled=true, handlesAlerts=true, browserName=android, browserConnectionEnabled=true, webStorageEnabled=true, rotatable=true, locationContextEnabled=true, applicationCacheEnabled=true, webdriver.remote.sessionid=1407927042902, takesScreenshot=true, version=19}]
 	at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -104,8 +104,8 @@ System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.versi
 Driver info: driver.version: unknown
 	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:259)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.naver.main.Utilities.waitForIsElementPresent(Utilities.java:341)
-	at com.naver.main.Utilities.selectAndWait(Utilities.java:508)
+	at Utilities.waitForIsElementPresent(Utilities.java:341)
+	at Utilities.selectAndWait(Utilities.java:508)
 	at com.naver.main.kin.s03_새질문.suite_01_새질문_하위메뉴_Test.TC_09_새질문_관심지역_전체_Test(suite_01_새질문_하위메뉴_Test.java:248)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
@@ -137,7 +137,7 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '2.32.0', revision: '6c40c18', time: '2013-04-09 17:23:04'
 System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_45'
 Session ID: 1407927042902
-Driver info: com.naver.main.Utilities
+Driver info: Utilities
 Capabilities [{platform=ANDROID, acceptSslCerts=true, javascriptEnabled=true, handlesAlerts=true, browserName=android, browserConnectionEnabled=true, webStorageEnabled=true, rotatable=true, locationContextEnabled=true, applicationCacheEnabled=true, webdriver.remote.sessionid=1407927042902, takesScreenshot=true, version=19}]
 	at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -201,7 +201,7 @@ System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.versi
 Driver info: driver.version: unknown
 	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:259)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.naver.main.Utilities.clickAndWait(Utilities.java:448)
+	at Utilities.clickAndWait(Utilities.java:448)
 	at com.naver.main.kin.s03_새질문.suite_01_새질문_하위메뉴_Test.TC_10_새질문_관심지역_설정_Test(suite_01_새질문_하위메뉴_Test.java:263)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
@@ -233,7 +233,7 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '2.32.0', revision: '6c40c18', time: '2013-04-09 17:23:04'
 System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_45'
 Session ID: 1407927042902
-Driver info: com.naver.main.Utilities
+Driver info: Utilities
 Capabilities [{platform=ANDROID, acceptSslCerts=true, javascriptEnabled=true, handlesAlerts=true, browserName=android, browserConnectionEnabled=true, webStorageEnabled=true, rotatable=true, locationContextEnabled=true, applicationCacheEnabled=true, webdriver.remote.sessionid=1407927042902, takesScreenshot=true, version=19}]
 	at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -295,7 +295,7 @@ System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.versi
 Driver info: driver.version: unknown
 	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:259)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at com.naver.main.Utilities.waitForIsSelected(Utilities.java:633)
+	at Utilities.waitForIsSelected(Utilities.java:633)
 	at com.naver.main.kin.s03_새질문.suite_01_새질문_하위메뉴_Test.TC_05_새질문_관심분야_전체_Test(suite_01_새질문_하위메뉴_Test.java:171)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
@@ -327,7 +327,7 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '2.32.0', revision: '6c40c18', time: '2013-04-09 17:23:04'
 System info: os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_45'
 Session ID: 1407927042902
-Driver info: com.naver.main.Utilities
+Driver info: Utilities
 Capabilities [{platform=ANDROID, acceptSslCerts=true, javascriptEnabled=true, handlesAlerts=true, browserName=android, browserConnectionEnabled=true, webStorageEnabled=true, rotatable=true, locationContextEnabled=true, applicationCacheEnabled=true, webdriver.remote.sessionid=1407927042902, takesScreenshot=true, version=19}]
 	at sun.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)

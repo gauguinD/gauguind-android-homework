@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript">
+        //<![CDATA[
+        $(function(){
+        $("#my_name").val($("#user_name").val());
+        });
+        //]]>
+    </script>
+<body>
+<p>
+    <input type="text" name="user_name" id="user_name" value="홍길동"/>
+</p>
+<p>
+    <input type="text" name="my_name" id="my_name"/>
+</p>
+</body>
+</html>

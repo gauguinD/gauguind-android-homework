@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript">
+        //<![CDATA[
+        $(function(){
+        $("h1 a").on({"mouseover focus":function(){
+        $(this).css("color","red");
+        },
+        "mouseout blur":function(){
+        $(this).css("color","yellow");
+        }
+        });
+
+        $("h2 a").on("mouseover focus",function(){
+        $(this).css("background-color","yellow");
+        });
+
+        $(document).on("mouseout blur","h2 a",function(){
+        $(this).css("background-color","aqua");
+        });
+
+        $("h2").append("<a href='#'>생성된요소</a>");
+        });
+        //]]>
+    </script>
+
+<style type="text/css">
+</style>
+</head>
+<body>
+<h1><a href="#">버튼</a></h1>
+<h2></h2>
+</body>
+</html>

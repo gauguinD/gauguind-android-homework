@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript">
+        //<![CDATA[
+        $(function(){
+        $("#btn1").mouseover(function(){
+        $("p").css("background-color","yellow");
+        });
+
+        $("#btn1").mouseout(function(){
+        $("p").css("background-color","purple");
+        });
+
+
+        $("#btn2").hover(function(){
+        $("p").css("background-color","yellow");
+        },function(){
+        $("p").css("background-color","purple");
+        });
+
+        });
+        //]]>
+    </script>
+   </head>
+<body>
+<button id="btn1">mouseover/out</button>
+<button id="btn2">hover</button>
+<p>
+    내용
+</p>
+</body>
+</html>

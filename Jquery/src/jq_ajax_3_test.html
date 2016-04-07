@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript">
+      //<![CDATA[
+       $(function(){
+       $.ajax({
+       url:"http://10.12.47.211/jstest/rank_test.xml",
+       dataType:"xml",
+       success:function(result){
+       if($(result).find("rank").length>0){
+       $(result).find("rank").each(function(){
+       var name=$(this).find("k").text();
+       var result="<li>"+name+"</li>";
+       $("#wrap ol").append(result);
+       });
+       }
+       }
+       });
+       });
+        //]]>
+    </script>
+   </head>
+<body>
+<h1>인기검색어</h1>
+<div id="wrap">
+    <ol></ol>
+</div>
+</body>
+</html>

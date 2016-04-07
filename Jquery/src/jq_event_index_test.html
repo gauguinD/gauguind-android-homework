@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript">
+           //<![CDATA[
+        $(function(){
+        $("#menu a").mouseover(function(){
+        $("#menu a").css("background","none");
+
+        $(this).css("backgroud","yellow");
+
+        var num=$("#menu a").index(this);
+        $(".txt").text(num);
+        });
+        });
+        //]]>
+    </script>
+
+<style type="text/css">
+</style>
+</head>
+<body>
+<ul id="menu">
+    <li><a href="#">내용1</a></li>
+    <li><a href="#">내용2</a></li>
+    <li><a href="#">내용3</a></li>
+    <li><a href="#">내용4</a></li>
+</ul>
+<p class="txt"></p>
+
+</body>
+</html>
