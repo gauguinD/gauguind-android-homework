@@ -1,4 +1,4 @@
-package com.naver.main;
+package main;
 
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.remote.DesiredCapabilities;

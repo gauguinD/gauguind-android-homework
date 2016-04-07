@@ -1,4 +1,4 @@
-package com.naver.main;
+package main;
 
 //import static org.junit.Assert.*;
 
@@ -357,9 +357,7 @@ public class Utilities extends RemoteWebDriver implements TakesScreenshot {
 		}
 		return result;
 	}
-	
-	
-	
+
 	public void switchToFrame(By frameName) throws Exception {
 		
 		WebElement element = null;
@@ -1146,6 +1144,22 @@ public class Utilities extends RemoteWebDriver implements TakesScreenshot {
 		 
 		 printLog ("alert text를 읽어들이지 못했습니다.");
 		 return null;
-		 }	
+		 }
+
+	/**
+	 * Element가 존재하는지 확인하는 메소드
+	 * @param locator 존재 확인 할 Element를 지정
+	 * @return locator에 존재하는 WebElement (element, null)
+	 */
+	public boolean isElementPresentNotExist(By locator) {
+
+		try {
+			findElement(locator);
+		}
+		catch (Exception e){
+			return false;
+		}
+		return true;
+	}
 
 }

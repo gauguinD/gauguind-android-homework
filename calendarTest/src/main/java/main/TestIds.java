@@ -1,4 +1,4 @@
-package com.naver.main;
+package main;
 
 public enum TestIds {
 

@@ -1,5 +1,5 @@
 
-package com.naver.main;
+package main;
 
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -21,7 +21,7 @@ public class Testcase {
 		try {
 			capability = Capabilities.gridSetUp(browser);
 			util = new Utilities(capability);
-			util.openAndWait(module.CalURL);
+			util.openAndWait(module.calURL);
 			
 		}
 		catch (UnreachableBrowserException ue){

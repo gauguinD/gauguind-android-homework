@@ -1,7 +1,7 @@
 package com.naver.calendar;
 
-import com.naver.main.TestIds;
-import com.naver.main.Testcase;
+import main.TestIds;
+import main.Testcase;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
@@ -153,7 +153,7 @@ public class suite_03_calendar extends Testcase {
 
     //@Test
     public void TC_04_AssertEvent_Test() throws Exception {
-        URL = module.CalURL+"#{\"sSection\":\"scheduleMain\",\"oParameter\":{\"sViewType\":\"month\",\"sDate\":\""+module.StartDate+"\"}}";
+        URL = module.calURL+"#{\"sSection\":\"scheduleMain\",\"oParameter\":{\"sViewType\":\"month\",\"sDate\":\""+module.StartDate+"\"}}";
         util.get(URL);
 
         util.waitForIsElementPresent(By.xpath("//a[contains(text(),'"+module.contents+"')]"));
